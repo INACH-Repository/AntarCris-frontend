@@ -8,6 +8,7 @@ import { HomeNewsComponent } from './app/home-page/home-news/home-news.component
 import { NavbarComponent } from './app/navbar/navbar.component';
 import { AdminSidebarComponent } from './app/admin/admin-sidebar/admin-sidebar.component';
 import { FooterComponent } from './app/footer/footer.component';
+import { SearchNavbarComponent } from './app/search-navbar/search-navbar.component';
 
 /**
  * Add components that use a custom decorator to ENTRY_COMPONENTS as well as DECLARATIONS.
@@ -23,6 +24,7 @@ const DECLARATIONS = [
   NavbarComponent,
   AdminSidebarComponent,
   FooterComponent,
+  SearchNavbarComponent,
 ];
 
 @NgModule({

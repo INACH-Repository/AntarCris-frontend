@@ -24,11 +24,14 @@ import { MetadataRepresentationListComponent } from './app/item-page/simple/meta
 import { PageNotFoundComponent } from './app/pagenotfound/pagenotfound.component';
 import { PageErrorComponent } from './app/page-error/page-error.component';
 import { PageInternalServerErrorComponent } from './app/page-internal-server-error/page-internal-server-error.component';
+import { ConfigurationSearchPageComponent } from './app/search-page/configuration-search-page.component';
+import { SearchPageComponent } from './app/search-page/search-page.component';
 import { RootModule } from '../../app/root.module';
 import { HomePageComponent } from './app/home-page/home-page.component';
 
-
 const DECLARATIONS = [
+    SearchPageComponent,
+    ConfigurationSearchPageComponent,
     ItemPageComponent,
     PageNotFoundComponent,
     PageErrorComponent,
