@@ -48,43 +48,52 @@ $font-family-sans-serif: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI"
 // ...
 
 // Override semantic colors here
-$primary:   #43515f;  // Gray
-$secondary: #495057;  // As Bootstrap $gray-700
-$success:   #92c642;  // Lime
-$info:      #1e6f90;  // Light blue
-$warning:   #ec9433;  // Orange
-$danger:    #cf4444;  // Red
-$light:     #f8f9fa;  // As Bootstrap $gray-100
-$dark:      #43515f;  // Gray
+$primary: #382483; // Gray
+$secondary: #495057; // As Bootstrap $gray-700
+$success: #92c642; // Lime
+$info: #1e6f90; // Light blue
+$warning: #ec9433; // Orange
+$danger: #cf4444; // Red
+$light: #f8f9fa; // As Bootstrap $gray-100
+$dark: #43515f; // Gray
 
 // Add new semantic colors here (you don't need to add existing semantic colors)
-$theme-colors: (
-  // ...
-);
-
+$theme-colors: ();
 
 /*** OTHER BOOTSTRAP VARIABLES ***/
 
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 $yiq-contrasted-threshold: 170;
 
-$body-color: #343a40;       // As Bootstrap $gray-800
+$body-color: #343a40; // As Bootstrap $gray-800
 
-$link-color: #1e6f90;       // Blue green, as DSpace $info
+$link-color: #1e6f90; // Blue green, as DSpace $info
 $link-decoration: none;
 $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: underline;
 
-$table-accent-bg: #f8f9fa;  // As Bootstrap $gray-100
-$table-hover-bg: #ced4da;   // As Bootstrap $gray-400
+$table-accent-bg: #f8f9fa; // As Bootstrap $gray-100
+$table-hover-bg: #ced4da; // As Bootstrap $gray-400
 
 $navbar-dark-color: #fff;
 
-
 /*** CUSTOM DSPACE VARIABLES ***/
 
-$ds-home-news-link-color: #D2FC93;
-$ds-header-navbar-border-bottom-color: #92c642;
+$ds-home-news-link-color: #d2fc93;
 
-$ds-breadcrumb-link-color: #154E66 !default;
-$ds-breadcrumb-link-active-color: #040D11 !default;
+$ds-breadcrumb-link-color: #154e66 !default;
+$ds-breadcrumb-link-active-color: #040d11 !default;
+
+/*** HEADER AND NAVBAR ***/
+
+$ds-header-bg: $primary !default;
+$ds-header-icon-color: #fff !default;
+$ds-header-icon-color-hover: darken($ds-header-icon-color, 15%);
+
+$ds-header-navbar-border-bottom-color: #87ceec;
+
+$ds-navbar-bg: $ds-header-bg !default;
+$ds-navbar-dropdown-bg: $ds-header-bg !default;
+$ds-expandable-navbar-bg: $ds-header-bg !default;
+$ds-navbar-link-color: $ds-header-icon-color !default;
+$ds-navbar-link-color-hover: #{darken($ds-navbar-link-color, 15%)} !default;
