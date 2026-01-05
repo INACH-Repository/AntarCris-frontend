@@ -1,0 +1,21 @@
+<section class="container">
+  <div class="my-5">
+    <h2 class="section-title">Líneas de Investigación</h2>
+    <p class="text-muted">El Programa Nacional de Ciencia Antártica (PROCIEN) se encuentra organizado en siete líneas de investigación. Conócelas y filtra publicaciones en base a ellas pulsando en su nombre.</p>
+    <div class="row justify-content-center">
+      @for (line of researchLines; track line.title) {
+        <div class="col-12 col-md-4 p-2">
+          <div class="card h-100">
+            <img class="card-img-top" [src]="line.imageUrl" [alt]="line.id" />
+            <div class="card-body">
+              <a [href]="line.link">
+                <h3 class="card-title">{{ line.title }}</h3>
+              </a>
+              <p class="card-text line-clamp" [title]=line.description>{{ line.description }}</p>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

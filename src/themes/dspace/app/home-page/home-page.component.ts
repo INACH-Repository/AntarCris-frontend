@@ -19,6 +19,7 @@ import { ThemedTextSectionComponent } from '../../../../app/shared/explore/secti
 import { ThemedTopSectionComponent } from '../../../../app/shared/explore/section-component/top-section/themed-top-section.component';
 import { ViewTrackerComponent } from '../../../../app/statistics/angulartics/dspace/view-tracker.component';
 import { HeroComponent } from './hero/hero.component';
+import { ResearchLinesComponent } from './research-lines/research-lines.component';
 
 @Component({
   selector: 'ds-themed-home-page',
@@ -44,6 +45,7 @@ import { HeroComponent } from './hero/hero.component';
     SuggestionsPopupComponent,
     AsyncPipe,
     HeroComponent,
+    ResearchLinesComponent,
   ],
 })
 export class HomePageComponent extends BaseComponent {
