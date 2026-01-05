@@ -1,0 +1,30 @@
+<div class="position-relative hero">
+  <div class="background-image-wrapper">
+    <!-- Background image -->
+    <img class="background-image" ngSrc="assets/dspace/images/antarctic-landscape.jpg" alt="background" [fill]="true" [priority]="true"/>
+    <div class="image-filter"></div>
+  </div>
+
+  <div class="hero-content position-relative container">
+    <div class="banner-info">
+      <div class="banner-text">
+        <!-- Hero image -->
+        <picture>
+          <source type="image/svg+xml" srcset="assets/dspace/images/nodo_logo_white.svg 2000w">
+          <img src="assets/dspace/images/nodo_logo_white.svg" alt="NODO Antartico logo">
+        </picture>
+      </div>
+      <div class="banner-description">
+        <h3 class="display-4">CRIS PROCIEN</h3>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <div class="banner-search">
+      <ds-search-section [sectionId]="sectionId" [searchSection]="searchSection"></ds-search-section>
+    </div>
+  </div>
+
+</div>
