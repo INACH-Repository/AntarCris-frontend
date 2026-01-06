@@ -20,6 +20,7 @@ import { ThemedTopSectionComponent } from '../../../../app/shared/explore/sectio
 import { ViewTrackerComponent } from '../../../../app/statistics/angulartics/dspace/view-tracker.component';
 import { HeroComponent } from './hero/hero.component';
 import { ResearchLinesComponent } from './research-lines/research-lines.component';
+import { SustainableGoalsComponent } from './sustainable-goals/sustainable-goals.component';
 
 @Component({
   selector: 'ds-themed-home-page',
@@ -46,6 +47,7 @@ import { ResearchLinesComponent } from './research-lines/research-lines.componen
     AsyncPipe,
     HeroComponent,
     ResearchLinesComponent,
+    SustainableGoalsComponent,
   ],
 })
 export class HomePageComponent extends BaseComponent {
