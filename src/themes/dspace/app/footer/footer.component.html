@@ -2,70 +2,70 @@
   <div *ngIf="showTopFooter" class="top-footer justify-content-center aling-items-center">
     <ds-text-section *ngIf="hasSiteFooterSections" [sectionId]="'site'" [textRowSection]=section [site]="(site | async)"></ds-text-section>
     <div *ngIf="!hasSiteFooterSections" class=" container p-4">
-      <!--Logos de instituciones-->
+      <!--Institution Logos-->
       <h3 class="text-uppercase"> Instituciones asociadas</h3>
       <div class="row">
-        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 align-items-center justify-content-center">
-           <img class="img-fluid w-75 h-auto"src="assets/dspace/images/nodo_logo.png" alt="{{ 'footer.link.4science' | translate}}" />
+        <div class="col-6 col-lg mb-4 mb-lg-0 align-items-center justify-content-center">
+          <a href="https://www.inach.cl/" target="_blank" rel="noopener">
+           <img class="institution-logo" src="assets/dspace/images/inach_logo.png" alt="{{ 'footer.link.4science' | translate}}" title="{{ 'footer.link.4science' | translate}}" />
+          </a>
         </div>
-        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 align-items-center justify-content-center">
-           <img class="img-fluid w-75 h-auto" src="assets/dspace/images/inach_logo.png" alt="{{ 'footer.link.4science' | translate}}" />
+        <div class="col-6 col-lg mb-4 mb-lg-0 align-items-center justify-content-center">
+          <a href="https://umag.cl/" target="_blank" rel="noopener">
+           <img class="institution-logo" src="assets/dspace/images/umag_logo.png" alt="{{ 'footer.link.4science' | translate}}" title="{{ 'footer.link.4science' | translate}}" />
+          </a>
         </div>
-        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 align-items-center justify-content-center">
-           <img class="img-fluid w-100 h-auto" src="assets/dspace/images/umag_logo.png" alt="{{ 'footer.link.4science' | translate}}" />
+        <div class="col-6 col-lg mb-4 mb-lg-0 align-items-center justify-content-center">
+          <a href="https://institutobase.cl/" target="_blank" rel="noopener">
+           <img class="institution-logo" src="assets/dspace/images/base_logo.png" alt="{{ 'footer.link.4science' | translate}}" title="{{ 'footer.link.4science' | translate}}" />
+          </a>
         </div>
-        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 align-items-center justify-content-center">
-           <img class="img-fluid w-100 h-auto" src="assets/dspace/images/base_logo.png" alt="{{ 'footer.link.4science' | translate}}" />
+        <div class="col-6 col-lg mb-4 mb-lg-0 align-items-center justify-content-center">
+          <a href="https://www.uach.cl/uach/inicio-uach" target="_blank" rel="noopener">
+           <img class="institution-logo" src="assets/dspace/images/uach_logo.png" alt="{{ 'footer.link.4science' | translate}}" title="{{ 'footer.link.4science' | translate}}" />
+          </a>
         </div>
-        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 align-items-center justify-content-center">
-           <img class="img-fluid w-100 h-auto" src="assets/dspace/images/uach_logo.png" alt="{{ 'footer.link.4science' | translate}}" />
-        </div>
-        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 align-items-center justify-content-center">
-           <img class="img-fluid w-75 h-auto" src="assets/dspace/images/anid_logo.png" alt="{{ 'footer.link.4science' | translate}}" />
+        <div class="col-6 col-lg mb-4 mb-lg-0 align-items-center justify-content-center">
+          <a href="https://anid.cl/" target="_blank" rel="noopener">
+           <img class="institution-logo" src="assets/dspace/images/anid_logo.png" alt="{{ 'footer.link.4science' | translate}}" title="{{ 'footer.link.4science' | translate}}" />
+          </a>
         </div>
       </div>
     </div>
   </div>
 
-  <!--<div *ngIf="showTopFooter" class="top-footer justify-content-center aling-items-center">
-    <ds-text-section *ngIf="hasSiteFooterSections" [sectionId]="'site'" [textRowSection]=section [site]="(site | async)"></ds-text-section>
-    <div *ngIf="!hasSiteFooterSections" class=" container p-4">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase">Get Involved!</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="https://github.com/4Science/DSpace/tree/main-cris">
-                <i class="fab fa-github" aria-hidden="true"></i> Source Code</a>
-            </li>
-          </ul>
+  <!-- Bottom footer -->
+  <div class="bottom-footer p-1 d-flex justify-content-center align-items-center text-white">
+    <div class="container pt-3">
+      <div class="row d-flex align-items-start px-4 px-md-0">
+        <div class="col-12 col-md-3 col-lg-2">
+          <img src="assets/dspace/images/nodo_logo_white.svg" alt="Nodo Ant&aacute;rtico" class="img-fluid">
         </div>
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase">Make it your own</h5>
+        <div class="col-12 col-md-9 col-lg-10 align-items-center d-flex flex-column pt-5 pt-md-0 border-bottom">
+          <div class="d-flex pb-3 flex-column flex-md-row justify-content-between w-100 relative">
+            <div class="text-start flex-md-fill pb-5 pb-md-2">
+              <p class="mb-0">Plaza Muñoz Gamero Nº 1055</p>
+              <p class="mb-3">Punta Arenas, Chile</p>
+              <p class="mb-0">Tel&eacute;fono:&nbsp; +56 61 2298100</p>
+              <p class="mb-0">Email:&nbsp; contacto&#64;nodoantartico.cl</p>
+            </div>
+            <div class="text-md-end">
+              <ul class="d-flex gap-2 footer__social">
+                <li><a href="https://www.instagram.com/nodoantartico/"><img src="assets/dspace/images/social/instagram-icon.svg" class="img-fluid" alt="Instagram - Nodo Ant&aacute;rtico" width="34" height="34"></a></li>
+                <li><a href="https://twitter.com/nodoantartico"><img src="assets/dspace/images/social/ico_x.png" class="img-fluid" alt="X (Twitter) - Nodo Ant&aacute;rtico" width="34" height="34"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCOT1a6OpKhZGTeCU3jvpj0g"><img src="assets/dspace/images/social/ico_youtube.png" class="img-fluid" alt="Youtube - Nodo Ant&aacute;rtico" width="34" height="34"></a></li>
+                <li><a href="https://www.linkedin.com/in/nodoantartico"><img src="assets/dspace/images/social/ico_linked.png" class="img-fluid" alt="LinkedIn - Nodo Ant&aacute;rtico" width="34" height="34"></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>-->
-
-  <!-- Parte inferior del footer -->
-  <div class="bottom-footer p-1 d-flex justify-content-center align-items-center text-white">
-    <div class="content-container">
-    </div>
-    <div *ngIf="coarLdnEnabled$ | async" class="notify-enabled text-white">
-      <a class="coar-notify-support-route" routerLink="info/coar-notify-support">
-        <img class="n-coar" src="assets/images/n-coar.svg" [attr.alt]="'menu.header.image.logo' | translate" />
-        {{ 'footer.link.coar-notify-support' | translate }}
-      </a>
     </div>
   </div>
   <!-- Copyright -->
-
-  <!-- Aviso -->
   <div class="bottom-footer p-1 d-flex justify-content-center align-items-center text-white">
     <div class="content-container">
-      Sitio en desarrollo
+      Copyright &copy; NODO ANTÁRTICO 2026
     </div>
   </div>
-  <!-- Aviso -->
 </footer>
