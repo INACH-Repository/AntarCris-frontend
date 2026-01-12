@@ -48,7 +48,7 @@ $font-family-sans-serif: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI"
 // ...
 
 // Override semantic colors here
-$primary: #382483; // Gray
+$primary: #573BA1; // Purple
 $secondary: #495057; // As Bootstrap $gray-700
 $success: #92c642; // Lime
 $info: #1e6f90; // Light blue
@@ -97,3 +97,8 @@ $ds-navbar-dropdown-bg: $ds-header-bg !default;
 $ds-expandable-navbar-bg: $ds-header-bg !default;
 $ds-navbar-link-color: $ds-header-icon-color !default;
 $ds-navbar-link-color-hover: #{darken($ds-navbar-link-color, 15%)} !default;
+
+/*** Home page ***/
+$ds-year-production-card-header-bg: $primary !default;
+$ds-year-production-card-header-color: #fff !default;
+$ds-year-production-value-color: $primary !default;

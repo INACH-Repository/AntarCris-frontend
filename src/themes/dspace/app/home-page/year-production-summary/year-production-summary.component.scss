@@ -11,8 +11,8 @@
 }
 
 .card-header {
-  background-color: #430085;
-  color: #fff;
+  background-color: var(--year-production-card-header-bg);
+  color: var(--ds-year-production-card-header-color);
   font-size: 1.5rem;
   font-weight: 900;
 }
@@ -20,7 +20,7 @@
 .year-count {
   font-size: 2rem;
   font-weight: 700;
-  color: #382483;
+  color: var(--ds-year-production-value-color);
   margin-bottom: 0;
 }
 
