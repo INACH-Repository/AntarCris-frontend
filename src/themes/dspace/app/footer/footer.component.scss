@@ -34,6 +34,18 @@
         padding: 0;
         list-style: none;
       }
+      .footer__links {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        a {
+          color: var(--ds-bottom-footer-link-color);
+        }
+        a:hover {
+          color: var(--ds-bottom-footer-link-color-hover);
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
