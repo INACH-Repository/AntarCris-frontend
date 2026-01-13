@@ -1,0 +1,22 @@
+.line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+}
+
+.card-img-top {
+  aspect-ratio: 16/10;
+}
+
+.section-title {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #430085 0%, #7f53ac 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 8px rgba(67, 0, 133, 0.15);
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}

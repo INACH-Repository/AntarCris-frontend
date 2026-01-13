@@ -18,11 +18,15 @@ import { ThemedSearchSectionComponent } from '../../../../app/shared/explore/sec
 import { ThemedTextSectionComponent } from '../../../../app/shared/explore/section-component/text-section/themed-text-section.component';
 import { ThemedTopSectionComponent } from '../../../../app/shared/explore/section-component/top-section/themed-top-section.component';
 import { ViewTrackerComponent } from '../../../../app/statistics/angulartics/dspace/view-tracker.component';
+import { HeroComponent } from './hero/hero.component';
+import { ResearchLinesComponent } from './research-lines/research-lines.component';
+import { SustainableGoalsComponent } from './sustainable-goals/sustainable-goals.component';
+import { YearProductionSummaryComponent } from './year-production-summary/year-production-summary.component';
 
 @Component({
   selector: 'ds-themed-home-page',
   // styleUrls: ['./home-page.component.scss'],
-  styleUrls: ['../../../../app/home-page/home-page.component.scss'],
+  styleUrls: ['../../../../app/home-page/home-page.component.scss', './home-page.component.scss'],
   templateUrl: './home-page.component.html',
   //templateUrl: '../../../../app/home-page/home-page.component.html',
   standalone: true,
@@ -42,6 +46,10 @@ import { ViewTrackerComponent } from '../../../../app/statistics/angulartics/dsp
     ViewTrackerComponent,
     SuggestionsPopupComponent,
     AsyncPipe,
+    HeroComponent,
+    ResearchLinesComponent,
+    SustainableGoalsComponent,
+    YearProductionSummaryComponent,
   ],
 })
 export class HomePageComponent extends BaseComponent {

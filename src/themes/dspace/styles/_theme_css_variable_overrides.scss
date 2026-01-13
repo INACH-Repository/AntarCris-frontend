@@ -25,5 +25,15 @@
 
   --ds-item-page-img-field-default-inline-height: 24px;
   --ds-item-page-img-field-ror-inline-height: var(--ds-item-page-img-field-default-inline-height);
-}
 
+  /*** FOOTER ***/
+  --ds-footer-bg: #1d1d1b;
+  --ds-bottom-footer-link-color: #ffffff;
+  --ds-bottom-footer-link-color-hover: #cccccc;
+
+  /*** Home page ***/
+  --year-production-card-header-bg: #{$ds-year-production-card-header-bg};
+  --ds-year-production-card-header-color: #{$ds-year-production-card-header-color};
+  --ds-year-production-value-color: #{$ds-year-production-value-color};
+
+}

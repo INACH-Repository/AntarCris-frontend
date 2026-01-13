@@ -1,0 +1,24 @@
+<section class="container my-5">
+  <h2 class="section-title mb-4">Resumen de Producción Anual (últimos 5 años)</h2>
+  <div class="row justify-content-center">
+    @for (year of data; track $index) {
+      <div class="col-12 col-sm-4 col-lg-3 col-xl-2 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-header">
+            {{ year.year }}
+          </div>
+          <div class="card-body d-flex flex-column justify-content-center">
+            <div class="card-text">
+              <p class="year-count">{{ year.count }}</p>
+              <span class="text-muted">publicaciones</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+  <div>
+    <p class="total-paragraph">Se han realizado un total de <span class="total-value">{{ total }}</span> publicaciones en los últimos 5 años.</p>
+    <p class="average-paragraph">Promedio de <span class="average-value">{{ average }}</span> publicaciones por año, destacando <span class="average-info">{{ best_year }}</span> con <span class="average-info">{{ best_count }}</span> publicaciones.</p>
+  </div>
+</section>

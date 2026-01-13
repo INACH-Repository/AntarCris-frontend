@@ -1,4 +1,5 @@
-<ng-container *ngIf="(site$.value && hasHomeHeaderMetadata); then dsHomeHeader; else dsHomeNews"></ng-container>
+<!-- Unnecessary until we need CMS -->
+<!--<ng-container *ngIf="(site$.value && hasHomeHeaderMetadata); then dsHomeHeader; else dsHomeNews"></ng-container>-->
 <ng-template #dsHomeHeader>
   <div id="home-header-wrapper">
     <ds-text-section [sectionId]="'site'"
@@ -13,32 +14,13 @@
 </ng-template>
 
 <ng-container *ngIf="site$.value">
-  <div *ngFor="let sectionComponentRow of ( sectionComponents | async )">
-    <div class="container">
-      <div class="row">
-        <div *ngFor="let sectionComponent of sectionComponentRow" [class]="componentClass(sectionComponent)"
-                [ngSwitch]="sectionComponent.componentType">
 
-            <ds-browse-section *ngSwitchCase="'browse'"
-                                    [sectionId]="sectionId"
-                                    [browseSection]="$any(sectionComponent)"></ds-browse-section>
-
-            <ds-search-section *ngSwitchCase="'search'"
-                                    [sectionId]="sectionId"
-                                    [searchSection]="$any(sectionComponent)"></ds-search-section>
-
-            <ds-facet-section *ngSwitchCase="'facet'"
-                                   [sectionId]="sectionId"
-                                   [facetSection]="$any(sectionComponent)"></ds-facet-section>
-
-            <ds-text-section *ngSwitchCase="'text-row'"
-                                  [sectionId]="sectionId"
-                                  [textRowSection]="$any(sectionComponent)"
-                                  [site]="$any(sectionComponent).contentType === 'text-metadata' ? site$.value : null"></ds-text-section>
-        </div>
-      </div>
-    </div>
+  <ds-hero></ds-hero>
+  <ds-year-production-summary></ds-year-production-summary>
+  <div class="bg-gray py-2">
+    <ds-research-lines></ds-research-lines>
   </div>
+  <ds-sustainable-goals></ds-sustainable-goals>
 </ng-container>
 
 <ds-view-tracker [object]="site$.value"></ds-view-tracker>

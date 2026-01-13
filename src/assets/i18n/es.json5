@@ -10203,4 +10203,14 @@
 
   // "search-facet-option.update.announcement": "The page will be reloaded. Filter {{ filter }} is selected.",
   "search-facet-option.update.announcement": "La página será recargada. Filtro {{ filter }} seleccionado.",
+
+  "menu.section.explore_researchoutputs": "Producción Científica",
+
+  "menu.section.communities_and_collections": "Comunidades y Colecciones",
+
+  "menu.section.explore_fundings_and_projects": "Proyectos",
+
+  "menu.section.explore_researcherprofiles": "Personas",
+
+  "menu.section.explore_orgunits": "Instituciones"
 }
