@@ -47,8 +47,8 @@ import { provideSubmissionState } from './submission/provide-submission-state';
 import { SUGGESTION_MODULE_PATH } from './suggestions-page/suggestions-page-routing-paths';
 
 export const APP_ROUTES: Route[] = [
-  { path: INTERNAL_SERVER_ERROR, component: ThemedPageInternalServerErrorComponent, data: { title: INTERNAL_SERVER_ERROR } },
-  { path: ERROR_PAGE, component: ThemedPageErrorComponent, data: { title: ERROR_PAGE }  },
+  { path: INTERNAL_SERVER_ERROR, component: ThemedPageInternalServerErrorComponent, data: { title: INTERNAL_SERVER_ERROR }, resolve: [menuResolver] },
+  { path: ERROR_PAGE, component: ThemedPageErrorComponent, data: { title: ERROR_PAGE }, resolve: [menuResolver] },
   {
     path: '',
     canActivate: [authBlockingGuard],
@@ -314,7 +314,7 @@ export const APP_ROUTES: Route[] = [
           .then((m) => m.ROUTES),
         canActivate: [authenticatedGuard],
       },
-      { path: '**', pathMatch: 'full', component: ThemedPageNotFoundComponent, data: { title: PAGE_NOT_FOUND_PATH }  },
+      { path: '**', pathMatch: 'full', component: ThemedPageNotFoundComponent, data: { title: PAGE_NOT_FOUND_PATH }, resolve: [menuResolver] },
     ],
   },
 ];

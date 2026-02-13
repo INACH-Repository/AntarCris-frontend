@@ -1,10 +1,18 @@
-<div class="page-not-found container">
-  <h1>404</h1>
-  <h2><small>{{"404.page-not-found" | translate}}</small></h2>
-  <br/>
-  <p>{{"404.help" | translate}}</p>
-  <br/>
-  <p class="text-center">
-    <a routerLink="/home" class="btn btn-primary">{{"404.link.home-page" | translate}}</a>
-  </p>
+<div class="container mt-5">
+  <div class="row">
+    <div class="info-wrapper col-12 col-lg-6">
+      <h1>404 - {{"404.page-not-found" | translate}}</h1>
+      <br>
+      <h3>{{"404.help" | translate}}</h3>
+      <br>
+      <p class="text-center">
+        <a routerLink="/home" class="btn btn-primary">{{"404.link.home-page" | translate}}</a>
+      </p>
+    </div>
+    <div class="col">
+      <div class="image-wrapper">
+        <img src="assets/images/404.png" class="img-fluid" alt="404" height="286" width="512">
+      </div>
+    </div>
+  </div>
 </div>
