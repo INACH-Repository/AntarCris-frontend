@@ -9,96 +9,47 @@ permissions:
 
 jobs:
   update-code:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Deploy new version
-        uses: INACH-Repository/ssh-action@master
-        with:
-          host: ${{ secrets.HOST_DSPACE }}
-          username: dspace
-          password: ${{ secrets.PASSWORD_DSPACE }}
-          script: |
-            cd /home/dspace/
-            cd AntarCris-frontend/
+        run: |
+            cd /home/dspace/AntarCris-frontend
             git pull origin main
 
 
-  clean-old-folders:
-    needs: update-code
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Limpiar carpeta dist
-        uses: INACH-Repository/ssh-action@master
-        with:
-          host: ${{ secrets.HOST_DSPACE }}
-          username: dspace
-          password: ${{ secrets.PASSWORD_DSPACE }}
-          script: |
-            cd /home/dspace/
-            cd AntarCris-frontend/
-            rm -r dist/
-
-
   build-new-version:
-    needs: clean-old-folders
-    runs-on: ubuntu-latest
+    needs: update-code
+    runs-on: self-hosted
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Build prod
-        uses: INACH-Repository/ssh-action@master
-        with:
-          host: ${{ secrets.HOST_DSPACE }}
-          username: dspace
-          password: ${{ secrets.PASSWORD_DSPACE }}
-          script: |
-            cd /home/dspace/
-            cd AntarCris-frontend/
+        run: |
+            cd /home/dspace/AntarCris-frontend
             export NODE_OPTIONS=--max-old-space-size=4096
             yarn build:prod
-
-
-  copy-new-version:
-    needs: build-new-version
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Copy new compile files
-        uses: INACH-Repository/ssh-action@master
-        with:
-          host: ${{ secrets.HOST_DSPACE }}
-          username: dspace
-          password: ${{ secrets.PASSWORD_DSPACE }}
-          script: |
-            cd /home/dspace/
-            cp -rf AntarCris-frontend/dist/ dspace-ui/
+            cp -rf /home/dspace/AntarCris-frontend/dist /home/dspace/dspace-ui
 
 
   reload-nodes:
-    needs: copy-new-version
-    runs-on: ubuntu-latest
+    needs: build-new-version
+    runs-on: self-hosted
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Reload PM2 nodes
-        uses: INACH-Repository/ssh-action@master
-        with:
-          host: ${{ secrets.HOST_DSPACE }}
-          username: dspace
-          password: ${{ secrets.PASSWORD_DSPACE }}
-          script: |
-            cd /home/dspace/
-            cd dspace-ui/
+        run: |
+            cd /home/dspace/dspace-ui
             pm2 reload dspace-ui.json --env production
-
 
