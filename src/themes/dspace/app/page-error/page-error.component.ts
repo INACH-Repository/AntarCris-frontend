@@ -10,7 +10,8 @@ import { TranslateModule } from '@ngx-translate/core';
  */
 @Component({
   selector: 'ds-base-page-error',
-  styleUrls: ['../../../../app/page-error/page-error.component.scss'],
+  styleUrls: ['./page-error.component.scss'],
+  //styleUrls: ['../../../../app/page-error/page-error.component.scss'],
   templateUrl: './page-error.component.html',
   //templateUrl: '../../../../app/page-error/page-error.component.html',
   changeDetection: ChangeDetectionStrategy.Default,
