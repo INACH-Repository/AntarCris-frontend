@@ -2,17 +2,19 @@
   font-size: 40px;
   line-height: 48px;
   font-weight: 700;
-  background: linear-gradient(90deg, #430085 0%, #7f53ac 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 8px rgba(67, 0, 133, 0.15);
+ // background: linear-gradient(90deg, #430085 0%, #7f53ac 100%);
+  //-webkit-background-clip: text;
+  //-webkit-text-fill-color: transparent;
+  //text-shadow: 2px 2px 8px rgba(67, 0, 133, 0.15);
   letter-spacing: 2px;
   margin-bottom: 8px;
+  color: #8C0327;
 }
 
 .card-header {
   background-color: var(--year-production-card-header-bg);
   color: var(--ds-year-production-card-header-color);
+  //color: #8C0327;
   font-size: 1.5rem;
   font-weight: 900;
 }
@@ -30,24 +32,28 @@
 }
 
 .total-value {
-  color: #382483;
+  color: #8C0327;
+  //color: #382483;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 .average-paragraph {
+  color: #8C0327;
   font-size: 1.25rem;
   text-align: center;
 }
 
 .average-value {
-  color: #382483;
+  color: #8C0327;
+  //color: #382483;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 .average-info {
-  color: #1e6f90;
+  color: #8C0327;
+  //color: #1e6f90;
   font-size: 1.5rem;
   font-weight: 700;
 }

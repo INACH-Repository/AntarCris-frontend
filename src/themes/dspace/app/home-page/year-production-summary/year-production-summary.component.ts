@@ -22,14 +22,14 @@ import {
 })
 export class YearProductionSummaryComponent implements OnInit {
   baseUrl = environment.rest.baseUrl;
-  interval = 5;
-  currentYear = new Date().getFullYear();
-  startYear = this.currentYear - this.interval + 1;
+  interval = 4;
+  currentYear = new Date().getFullYear() -2;
+  startYear = this.currentYear - this.interval; //+ 1;
 
   data: any[] = [];
 
   total: number;
-  average: number;
+  average: string;
   best_year: number;
   best_count: number;
 
@@ -66,8 +66,8 @@ export class YearProductionSummaryComponent implements OnInit {
     return this.data.reduce((sum, item) => sum + item.count, 0);
   }
 
-  calculateAverage(): number {
-    return this.calculateTotal() / this.data.length;
+  calculateAverage(): string {
+    return (this.calculateTotal() / this.data.length).toFixed(2);
   }
 
   getBestYear(): { year: number; count: number } {
