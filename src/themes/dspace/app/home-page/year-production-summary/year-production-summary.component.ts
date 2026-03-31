@@ -50,6 +50,7 @@ export class YearProductionSummaryComponent implements OnInit {
         this.data = Object.entries(response).map(([key, value]) => ({
           year: key.toString(),
           count: value,
+          link: `browse/dateissued?bbm.page=1&startsWith=${key.toString()}`
         }));
         this.total = this.calculateTotal();
         this.average = this.calculateAverage();
