@@ -2465,11 +2465,17 @@
 
   "explore.counters-section.project_funding": "Projects",
 
+  "explore.counters-section.thesis": "Thesis",
+
   "explore.facet-section.title": "Discover",
+
+  "explore.index.anid_oecd": "ANID research lines",
 
   "explore.index.all": "All",
 
   "explore.index.author": "Author",
+
+  "explore.index.country": "Country",
 
   "explore.index.graphitemtype": "Graph by type",
 
@@ -2508,11 +2514,19 @@
 
   "explore.index.familyName": "Family name",
 
+  "explore.index.fullName": "Full name",
+
+  "explore.index.fundername": "Funder",
+
   "explore.index.funding": "Funding",
 
   "explore.index.givenName": "Given name",
 
+  "explore.index.research_topic": "Research topic",
+
   "explore.index.has_content_in_original_bundle": "Has content in original bundle",
+
+  "explore.index.implementingInstitution": "Implementing institution",
 
   "explore.index.isAuthorOfPublication": "Publication's author",
 
@@ -2527,6 +2541,8 @@
   "explore.index.isPersonOfOrgUnit": "Organization's person",
 
   "explore.index.isPersonOfProject": "Project's person",
+
+  "explore.index.principalInvestigator": "Principal investigator",
 
   "explore.index.isProjectOfOrgUnit": "Organization's project",
 
@@ -2560,13 +2576,15 @@
 
   "explore.index.organizationLegalName": "Organization legal name",
 
+  "explore.index.organizationName": "Institution name",
+
   "explore.index.original_bundle_descriptions": "Original bundle descriptions",
 
   "explore.index.original_bundle_filenames": "Original bundle filenames",
 
   "explore.index.ouname": "Name",
 
-  "explore.index.procien_lines": "Procien research line",
+  "explore.index.procien_lines": "INACH research line",
 
   "explore.index.projectOrgUnits": "Organizations",
 
@@ -2574,7 +2592,13 @@
 
   "explore.index.pjtitle": "Title",
 
+  "explore.index.projectEndDate": "End date",
+
+  "explore.index.projectStartDate": "Start date",
+
   "explore.index.projectinvestigators": "Researcher",
+
+  "explore.index.quartile": "Quartile",
 
   "explore.index.rodept": "Department",
 
@@ -2608,6 +2632,8 @@
 
   "explore.search-section.reset-button": "Reset",
 
+  "explore.search-section.thesis.title": "Search Thesis",
+
   "explore.infrastructure.breadcrumbs": "Infrastructure",
 
   "explore.fundings.breadcrumbs": "Fundings",
@@ -2623,6 +2649,8 @@
   "explore.researchoutputs.breadcrumbs": "Research Outputs",
 
   "explore.researcherprofiles.breadcrumbs": "People",
+
+  "explore.thesis.breadcrumbs": "Thesis",
 
   "browse.metadata.rsoTitle.breadcrumbs": "Browse by Title",
 
@@ -3846,6 +3874,16 @@
 
   "item.preview.dspace.entity.type": "Entity Type:",
 
+  "item.project.endDate": "To:",
+
+  "item.project.startDate": "From:",
+
+  "item.project.fundedBy": "Funded by: ",
+
+  "item.project.institution": "Institution: ",
+
+  "item.project.principalInvestigator": "Principal Investigator: ",
+
   "item.select.confirm": "Confirm selected",
 
   "item.select.empty": "No items to show",
@@ -4322,6 +4360,8 @@
   "menu.section.explore_projects": "Projects",
 
   "menu.section.explore_fundings_and_projects": "Fundings & Projects",
+
+  "menu.section.explore_thesis": "Thesis",
 
   "menu.section.communities_and_collections": "Communities & Collections",
 
@@ -5533,7 +5573,11 @@
 
   "search.filters.applied.f.title": "Title",
 
+  "search.filters.applied.f.anid_eocd": "ANID research lines",
+
   "search.filters.applied.f.author": "Author",
+
+  "search.filters.applied.f.country": "Country",
 
   "search.filters.applied.f.dateIssued.max": "End date",
 
@@ -5547,17 +5591,33 @@
 
   "search.filters.applied.f.editor": "Editor",
 
+  "search.filters.applied.f.fullName": "Full name",
+
+  "search.filters.applied.f.fundername": "Funder",
+
+  "search.filters.applied.f.research_topic": "Research topic",
+
   "search.filters.applied.f.has_content_in_original_bundle": "Has files",
 
   "search.filters.applied.f.ods": "Sustainable Development Goals",
 
-  "search.filters.applied.f.procien_lines": "Procien research line",
+  "search.filters.applied.f.organizationName": "Institution name",
+
+  "search.filters.applied.f.procien_lines": "INACH research line",
+
+  "search.filters.applied.f.projectEndDate": "End date",
+
+  "search.filters.applied.f.projectStartDate": "Start date",
 
   "search.filters.applied.f.projectinvestigators": "Investigator",
+
+  "search.filters.applied.f.quartile": "Quartile",
 
   "search.filters.applied.f.original_bundle_filenames": "File name",
 
   "search.filters.applied.f.original_bundle_descriptions": "File description",
+
+  "search.filters.applied.f.implementingInstitution": "Implementing institution",
 
   "search.filters.applied.f.itemtype": "Type",
 
@@ -5565,11 +5625,13 @@
 
   "search.filters.applied.f.namedresourcetype": "Status",
 
-  "search.filters.applied.f.personorgunits": "Organisation",
+  "search.filters.applied.f.personorgunits": "Organization",
 
-  "search.filters.applied.f.personOrgUnits": "Organisation",
+  "search.filters.applied.f.personOrgUnits": "Organization",
 
-  "search.filters.applied.f.projectorgunits": "Organisation",
+  "search.filters.applied.f.principalInvestigator": "Principal investigator",
+
+  "search.filters.applied.f.projectorgunits": "Organization",
 
   "search.filters.applied.f.subject": "Subject",
 
@@ -5593,7 +5655,7 @@
 
   "search.filters.applied.f.graphpubldatetrl": "Public date RTL",
 
-  "search.filters.applied.f.organization": "Organisation",
+  "search.filters.applied.f.organization": "Organization",
 
   "search.filters.applied.charts.defaultConfiguration.title": "Search Output",
 
@@ -5658,6 +5720,12 @@
 
   "search.filters.filter.title.label": "Search Title",
 
+  "search.filters.filter.anid_oecd.head": "ANID research lines",
+
+  "search.filters.filter.anid_oecd.placeholder": "ANID research lines",
+
+  "search.filters.filter.anid_oecd.label": "Search ANID research lines",
+
   "search.filters.filter.author.head": "Author",
 
   "search.filters.filter.author.placeholder": "Author name",
@@ -5675,6 +5743,12 @@
   "search.filters.filter.birthDate.label": "Search birth date",
 
   "search.filters.filter.collapse": "Collapse filter",
+
+  "search.filters.filter.country.head": "Country",
+
+  "search.filters.filter.country.placeholder": "Country",
+
+  "search.filters.filter.country.label": "Search country",
 
   "search.filters.filter.creativeDatePublished.head": "Date Published",
 
@@ -5742,6 +5816,12 @@
 
   "search.filters.filter.eqorgunit.placeholder": "Organization",
 
+  "search.filters.filter.fullName.head": "Full name",
+
+  "search.filters.filter.fullName.placeholder": "Full name",
+
+  "search.filters.filter.fullName.label": "Search full name",
+
   "search.filters.filter.funding.head": "Funding",
 
   "search.filters.filter.funding.placeholder": "Funding",
@@ -5761,6 +5841,12 @@
   "search.filters.filter.original_bundle_descriptions.placeholder": "File description",
 
   "search.filters.filter.original_bundle_descriptions.label": "Search File description",
+
+  "search.filters.filter.implementingInstitution.head": "Implementing institution",
+
+  "search.filters.filter.implementingInstitution.placeholder": "Implementing institution",
+
+  "search.filters.filter.implementingInstitution.label": "Search Implementing institution",
 
   "search.filters.filter.itemtype.head": "Type",
 
@@ -5788,6 +5874,12 @@
 
   "search.filters.filter.projectResearchLine.head": "Procien research line",
 
+  "search.filters.filter.research_topic.head": "Research topic",
+
+  "search.filters.filter.research_topic.placeholder": "Research topic",
+
+  "search.filters.filter.research_topic.label": "Search research topic",
+
   "search.filters.filter.jobTitle.head": "Job Title",
 
   "search.filters.filter.jobTitle.placeholder": "Job Title",
@@ -5806,11 +5898,23 @@
 
   "search.filters.filter.language.placeholder": "Language",
 
-  "search.filters.filter.procien_lines.head": "Procien research line",
+  "search.filters.filter.principalInvestigator.head": "Principal investigator",
 
-  "search.filters.filter.procien_lines.placeholder": "Procien research line",
+  "search.filters.filter.principalInvestigator.palceholder": "Principal investigator",
 
-  "search.filters.filter.procien_lines.label": "Procien research line",
+  "search.filters.filter.principalInvestigator.label": "Search principal investigator",
+
+  "search.filters.filter.procien_lines.head": "INACH research line",
+
+  "search.filters.filter.procien_lines.placeholder": "INACH research line",
+
+  "search.filters.filter.procien_lines.label": "INACH research line",
+
+  "search.filters.filter.quartile.head": "Quartile",
+
+  "search.filters.filter.quartile.placeholder": "Quartile",
+
+  "search.filters.filter.quartile.label": "Search quartile",
 
   "search.filters.filter.ods.head": "Sustainable Development Goals",
 
@@ -5866,6 +5970,12 @@
 
   "search.filters.filter.organizationFoundingDate.label": "Search date founded",
 
+  "search.filters.filter.organizationName.head": "Institution name",
+
+  "search.filters.filter.organizationName.placeholder": "Institution name",
+
+  "search.filters.filter.organizationName.label": "Search institution name",
+
   "search.filters.filter.scope.head": "Scope",
 
   "search.filters.filter.scope.placeholder": "Scope filter",
@@ -5889,6 +5999,12 @@
   "search.filters.filter.submitter.label": "Search submitter",
 
   "search.filters.filter.show-tree": "Browse {{ name }} tree",
+
+  "search.filters.filter.fundername.head": "Funder",
+
+  "search.filters.filter.fundername.placeholder": "Funder",
+
+  "search.filters.filter.fundername.label": "Search funder",
 
   "search.filters.filter.funding.head": "Funding",
 
@@ -6093,17 +6209,17 @@
 
   "sorting.organization.legalName.DESC": "Legal Name Descending",
 
-  "sorting.organisation.address.addressCountry.ASC": "Country Ascending",
+  "sorting.organization.address.addressCountry.ASC": "Country Ascending",
 
-  "sorting.organisation.address.addressCountry.DESC": "Country Descending",
+  "sorting.organization.address.addressCountry.DESC": "Country Descending",
 
-  "sorting.organisation.address.addressLocality.ASC": "Locality Ascending",
+  "sorting.organization.address.addressLocality.ASC": "Locality Ascending",
 
-  "sorting.organisation.address.addressLocality.DESC": "Locality Descending",
+  "sorting.organization.address.addressLocality.DESC": "Locality Descending",
 
-  "sorting.organisation.address.foundingDate.ASC": "Founding Date Ascending",
+  "sorting.organization.foundingDate.ASC": "Founding Date Ascending",
 
-  "sorting.organisation.address.foundingDate.DESC": "Founding Date Descending",
+  "sorting.organization.foundingDate.DESC": "Founding Date Descending",
 
   "sorting.person.familyName.ASC": "Surname Ascending",
 
@@ -7523,6 +7639,10 @@
   "subscriptions.table.not-available-message": "The subscribed item has been deleted, or you don't currently have the permission to view it",
 
   "subscriptions.table.empty.message": "You do not have any subscriptions at this time. To subscribe to email updates for a Community or Collection, use the subscription button on the object's page.",
+
+  "thesis.listelement.badge": "Thesis",
+
+  "thesis.search.results.head": "Thesis Search Results",
 
   "thumbnail.default.alt": "Thumbnail Image",
 
@@ -9095,25 +9215,25 @@
   "layout.field.label.OrgUnit.[organization.address.addressLocality]": "City",
   "layout.field.label.OrgUnit.[dc.description.abstract]": "Description",
   "layout.field.label.OrgUnit.[crisou.director]": "Director",
-  "layout.field.label.OrgUnit.[organization.parentOrganization]": "Parent Organisation",
+  "layout.field.label.OrgUnit.[organization.parentOrganization]": "Parent Organization",
   "layout.field.label.OrgUnit.[organization.foundingDate]": "Founding Date",
   "layout.field.label.OrgUnit.[crisou.boards]": "Boards",
   "layout.field.label.OrgUnit.[organization.identifier.ror]": "ROR Identifier",
-  "layout.field.label.OrgUnit.[dc.title]": "Organisation Name",
+  "layout.field.label.OrgUnit.[dc.title]": "Organization Name",
 
   "layout.field.label.Project.[dc.description.abstract]": "Description",
   "layout.field.label.Project.[dc.subject]": "Keywords",
   "layout.field.label.Project.[oairecerif.acronym]": "Acronym",
   "layout.field.label.Project.[dc.title]": "Project Title",
   "layout.field.label.Project.[crispj.coordinator]": "Implementing institution",
-  "layout.field.label.Project.[crispj.partnerou]": "Partner Organisations",
+  "layout.field.label.Project.[crispj.partnerou]": "Partner Organizations",
   "layout.field.label.Project.[oairecerif.internalid]": "Internal ID",
   "layout.field.label.Project.[crispj.investigator]": "Principal Investigator",
   "layout.field.label.Project.[oairecerif.project.status]": "Status",
   "layout.field.label.Project.[oairecerif.project.startDate]": "Start Date",
   "layout.field.label.Project.[oairecerif.project.endDate]": "End Date",
   "layout.field.label.Project.[crispj.coinvestigators]": "Investigators",
-  "layout.field.label.Project.[crispj.organization]": "Organisations",
+  "layout.field.label.Project.[crispj.organization]": "Organizations",
   "layout.field.label.Project.[dc.relation.equipment]": "Uses",
   "layout.field.label.Project.[oairecerif.identifier.url]": "Project Web Site",
   "layout.field.label.Project.[crispj.openaireid]": "OpenAIRE ID",
@@ -9160,7 +9280,7 @@
   "layout.field.label.Event.[crisevent.organizerpj]": "Organizer",
   "layout.field.label.Event.[crisevent.sponsorou]": "Sponsor",
   "layout.field.label.Event.[crisevent.sponsorpj]": "Sponsor",
-  "layout.field.label.Event.[crisevent.partnerou]": "Partner Organisation",
+  "layout.field.label.Event.[crisevent.partnerou]": "Partner Organization",
   "layout.field.label.Event.[crisevent.partnerpj]": "Partner Project",
   "layout.field.label.Event.[oairecerif.acronym]": "Acronym",
   "layout.field.label.Event.[dc.description.abstract]": "Abstract",
@@ -9171,7 +9291,7 @@
   "layout.field.label.Equipment.[dc.description]": "Description",
   "layout.field.label.Equipment.[oairecerif.internalid]": "Internal ID",
   "layout.field.label.Equipment.[dc.title]": "Name",
-  "layout.field.label.Equipment.[crisequipment.ownerou]": "Owner Organisation",
+  "layout.field.label.Equipment.[crisequipment.ownerou]": "Owner Organization",
 
   "layout.field.label.Publication.[dc.relation.ispartof]": "Journal",
   "layout.field.label.Publication.[dc.relation.issn]": "ISSN",
@@ -9216,11 +9336,11 @@
   "layout.field.label.Person.NESTED[crisrp.qualification.start]": "Start",
   "layout.field.label.Person.NESTED[crisrp.qualification.end]": "End",
   "layout.field.label.Person.NESTED[oairecerif.affiliation.role]": "Role",
-  "layout.field.label.Person.NESTED[oairecerif.person.affiliation]": "Organisation",
+  "layout.field.label.Person.NESTED[oairecerif.person.affiliation]": "Organization",
   "layout.field.label.Person.NESTED[oairecerif.affiliation.startDate]": "Start",
   "layout.field.label.Person.NESTED[oairecerif.affiliation.endDate]": "End",
   "layout.field.label.Person.NESTED[crisrp.education.role]": "Role",
-  "layout.field.label.Person.NESTED[crisrp.education]": "Organisation",
+  "layout.field.label.Person.NESTED[crisrp.education]": "Organization",
   "layout.field.label.Person.NESTED[crisrp.education.start]": "Start",
   "layout.field.label.Person.NESTED[crisrp.education.end]": "End",
 

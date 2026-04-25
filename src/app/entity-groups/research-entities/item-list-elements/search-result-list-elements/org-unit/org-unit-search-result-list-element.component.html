@@ -29,10 +29,20 @@
             <span *ngIf="linkType === linkTypes.None"
                 class="lead"
                 [innerHTML]="dsoTitle || ('orgunit.listelement.no-title' | translate)"></span>
-          <div *ngIf="dso.allMetadata(['dc.description.*']).length > 0" class="text-muted">
-            <ds-truncatable-part [id]="dso.id" [minLines]="3">
-              <span class="item-list-org-unit-description" [innerHTML]="firstMetadataValue('dc.description.abstract')"></span>
-            </ds-truncatable-part>
+          <div class="text-muted" *ngIf="dso.firstMetadataValue('oairecerif.acronym')">
+            {{ dso.firstMetadataValue('oairecerif.acronym') }}
+          </div>
+          <div *ngIf="dso.firstMetadataValue('organization.address.addressLocality') || dso.firstMetadataValue('organization.address.addressCountry')">
+            <span *ngIf="dso.firstMetadataValue('organization.address.addressLocality')">{{ dso.firstMetadataValue('organization.address.addressLocality') }}</span>
+            <span *ngIf="dso.firstMetadataValue('organization.address.addressLocality') && dso.firstMetadataValue('organization.address.addressCountry')">, </span>
+            <span *ngIf="dso.firstMetadataValue('organization.address.addressCountry')">{{ dso.firstMetadataValue('organization.address.addressCountry') }}</span>
+          </div>
+          <div *ngIf="dso.firstMetadataValue('organization.identifier.ror') as metadataValue">
+            <span class="d-flex align-items-center">
+              <a [href]="getRorUrl(metadataValue)" target="_blank" rel="noopener noreferrer">
+                https://ror.org/{{ getRorId(metadataValue) }}
+              </a>
+            </span>
           </div>
           <ds-additional-metadata [object]="dso"></ds-additional-metadata>
                 </ds-truncatable>

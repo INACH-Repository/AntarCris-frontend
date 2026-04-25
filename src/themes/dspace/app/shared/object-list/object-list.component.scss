@@ -1,0 +1,10 @@
+ds-selectable-list-item-control {
+  z-index: 1
+}
+
+li {
+  background-color: var(--bs-light);
+  box-shadow: 0px 1px 3px 0px var(--bs-light);
+  padding: 24px 16px;
+  border-radius: 8px;
+}

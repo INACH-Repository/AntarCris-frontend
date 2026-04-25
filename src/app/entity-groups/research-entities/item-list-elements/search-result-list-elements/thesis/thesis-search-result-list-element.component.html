@@ -1,0 +1,77 @@
+<div class="row word-break">
+  <!-- Thumbnail -->
+  <div *ngIf="showThumbnails" class="col-3 col-xl-2 pr-sm-0">
+    <a *ngIf="linkType !== linkTypes.None" [target]="(linkType === linkTypes.ExternalLink) ? '_blank' : '_self'" [attr.rel]="(linkType === linkTypes.ExternalLink) ? 'noopener noreferrer' : null"
+       [routerLink]="[itemPageRoute]" class="dont-break-out">
+      <ds-thumbnail [thumbnail]="dso?.thumbnail | async" [limitWidth]="true">
+      </ds-thumbnail>
+    </a>
+    <span *ngIf="linkType === linkTypes.None" class="dont-break-out">
+      <ds-thumbnail [thumbnail]="dso?.thumbnail | async" [limitWidth]="true">
+      </ds-thumbnail>
+    </span>
+  </div>
+  <!-- Metadata -->
+  <div [ngClass]="showThumbnails ? 'col-9 col-xl-10' : 'col-12'">
+    <div class="d-flex justify-content-between">
+      <div class="flex-fill">
+        <!-- Consent settings message -->
+        <small class="d-flex text-muted" *ngIf="(hasLoadedThirdPartyMetrics$ | async) !== true && showMetrics">
+          {{ "third-party-metrics-blocked" | translate }}&nbsp;
+          <div role="button" class="btn-link" (click)="showSettings()">{{ "third-party-metrics-cookies.consent-settings" | translate }}</div>
+        </small>
+        <!-- Badges -->
+        <div class="d-flex">
+          <ds-badges *ngIf="showLabel" [object]="dso" [context]="context" [showAccessStatus]="true"></ds-badges>
+        </div>
+        <ds-truncatable [id]="dso.id" *ngIf="object !== undefined && object !== null">
+          <!-- Title as link and plain text -->
+          <a *ngIf="linkType !== linkTypes.None" [target]="(linkType === linkTypes.ExternalLink) ? '_blank' : '_self'" [attr.rel]="(linkType === linkTypes.ExternalLink) ? 'noopener noreferrer' : null"
+                 [routerLink]="[itemPageRoute]" class="lead item-list-title dont-break-out"
+                 [innerHTML]="dsoTitle"></a>
+          <span *ngIf="linkType === linkTypes.None" class="lead item-list-title dont-break-out"
+                [innerHTML]="dsoTitle"></span>
+          <!-- Workflow statistics -->
+          <ds-in-workflow-statistics  *ngIf="showWorkflowStatistics" [item]="dso"></ds-in-workflow-statistics>
+          <!-- Date and authors -->
+          <span class="text-muted">
+            <ds-truncatable-part [id]="dso.id" [minLines]="1">
+              <!-- Date -->
+              <ng-container *ngIf="dso.firstMetadataValue('dc.date.issued')">
+                (<span *ngIf="dso.firstMetadataValue('dc.date.issued')" class="item-list-date" [innerHTML]="firstMetadataValue('dc.date.issued')"></span>)
+              </ng-container>
+              <!-- Authors -->
+              <span *ngIf="dso.allMetadataValues(authorMetadata, placeholderFilter).length > 0" class="item-list-authors">
+                <ng-container *ngVar="(isCollapsed() | async) as isCollapsed">
+                  <ng-container *ngIf="isCollapsed">
+                    <span *ngFor="let author of dso.limitedMetadata(authorMetadata, additionalMetadataLimit, placeholderFilter); let i=index; let last=last;">
+                      <ds-metadata-link-view [item]="dso" [metadata]="author" [metadataName]="authorMetadata"></ds-metadata-link-view><span *ngIf="!last">; </span>
+                    </span>
+                  </ng-container>
+                  <ng-container *ngIf="!isCollapsed">
+                     <span *ngFor="let author of dso.allMetadata(authorMetadata, placeholderFilter); let i=index; let last=last;">
+                      <ds-metadata-link-view [item]="dso" [metadata]="author" [metadataName]="authorMetadata"></ds-metadata-link-view><span *ngIf="!last">; </span>
+                    </span>
+                  </ng-container>
+                </ng-container>
+              </span>
+            </ds-truncatable-part>
+          </span>
+          <!-- Abstract -->
+          <div *ngIf="dso.firstMetadataValue('dc.description.abstract')" class="item-list-abstract">
+            <ds-truncatable-part [id]="dso.id" [minLines]="3">
+              <div [innerHTML]="firstMetadataValue('dc.description.abstract')"></div>
+            </ds-truncatable-part>
+          </div>
+          <ds-additional-metadata [object]="dso"></ds-additional-metadata>
+        </ds-truncatable>
+        <!-- Metric Badges like scopus citations -->
+        <ds-metric-badges *ngIf="showMetrics" class="d-block clearfix" [item]="dso"></ds-metric-badges>
+      </div>
+      <!-- Metric donuts like altmetrics donut -->
+      <div class="align-self-center" *ngIf="showMetrics">
+        <ds-metric-donuts [item]="dso"></ds-metric-donuts>
+      </div>
+    </div>
+  </div>
+</div>

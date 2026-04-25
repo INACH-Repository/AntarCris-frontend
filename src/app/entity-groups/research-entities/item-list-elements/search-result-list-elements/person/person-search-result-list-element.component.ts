@@ -11,6 +11,7 @@ import {
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { MetadataLinkViewComponent } from 'src/app/shared/metadata-link-view/metadata-link-view.component';
 
 import {
   APP_CONFIG,
@@ -35,7 +36,7 @@ import { ThemedThumbnailComponent } from '../../../../../thumbnail/themed-thumbn
   styleUrls: ['./person-search-result-list-element.component.scss'],
   templateUrl: './person-search-result-list-element.component.html',
   standalone: true,
-  imports: [NgIf, RouterLink, ThemedThumbnailComponent, NgClass, ThemedBadgesComponent, TruncatableComponent, TruncatablePartComponent, NgFor, AsyncPipe, TranslateModule, AdditionalMetadataComponent, MetricBadgesComponent, MetricDonutsComponent],
+  imports: [NgIf, RouterLink, ThemedThumbnailComponent, NgClass, ThemedBadgesComponent, TruncatableComponent, TruncatablePartComponent, NgFor, AsyncPipe, TranslateModule, AdditionalMetadataComponent, MetricBadgesComponent, MetricDonutsComponent, MetadataLinkViewComponent],
 })
 /**
  * The component for displaying a list element for an item search result of the type Person

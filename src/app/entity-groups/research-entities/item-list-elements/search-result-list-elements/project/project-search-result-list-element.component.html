@@ -29,6 +29,44 @@
       <span *ngIf="linkType === linkTypes.None"
                 class="lead item-list-title dont-break-out"
                 [innerHTML]="dsoTitle"></span>
+        <!-- Dates -->
+        <div class="text-muted">
+          <span>{{'item.project.startDate' | translate}} </span>
+          <span [innerHTML]="firstMetadataValue('oairecerif.project.startDate')"></span>
+          <span> {{'item.project.endDate' | translate}} </span>
+          <span [innerHTML]="firstMetadataValue('oairecerif.project.endDate')"></span>
+        </div>
+
+        <!-- Principal investigator -->
+        <div>
+          @for (author of dso.limitedMetadata(authorMetadata, 10); track author; let i = $index; let last = $last) {
+            <span>
+              <span>{{'item.project.principalInvestigator' | translate}}</span>
+              <ds-metadata-link-view [item]="dso" [metadata]="author" [metadataName]="authorMetadata"></ds-metadata-link-view>
+            </span>
+          }
+        </div>
+
+        <!-- Implementing institution -->
+        <div>
+          @for (organization of dso.limitedMetadata('crispj.coordinator', 1); track organization) {
+            <div>
+              <span>{{'item.project.institution' | translate}}</span>
+              <ds-metadata-link-view [item]="dso" [metadata]="organization" [metadataName]="'orgunit'"></ds-metadata-link-view>
+            </div>
+          }
+        </div>
+
+        <!-- Funder -->
+        <div>
+          @for (organization of dso.limitedMetadata('oairecerif.funder', 1); track organization) {
+            <div>
+              <span>{{'item.project.fundedBy' | translate}}</span>
+              <ds-metadata-link-view [item]="dso" [metadata]="organization" [metadataName]="'orgunit'"></ds-metadata-link-view>
+            </div>
+          }
+        </div>
+
           <!--<span class="text-muted">-->
           <!--<ds-truncatable-part [id]="dso.id" [minLines]="1">-->
           <!--<span *ngIf="dso.allMetadata(['project.identifier.status']).length > 0"-->

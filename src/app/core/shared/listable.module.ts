@@ -47,6 +47,7 @@ import { ProjectListElementComponent } from '../../entity-groups/research-entiti
 import { OrgUnitSearchResultListElementComponent } from '../../entity-groups/research-entities/item-list-elements/search-result-list-elements/org-unit/org-unit-search-result-list-element.component';
 import { PersonSearchResultListElementComponent } from '../../entity-groups/research-entities/item-list-elements/search-result-list-elements/person/person-search-result-list-element.component';
 import { ProjectSearchResultListElementComponent } from '../../entity-groups/research-entities/item-list-elements/search-result-list-elements/project/project-search-result-list-element.component';
+import { ThesisSearchResultListElementComponent } from '../../entity-groups/research-entities/item-list-elements/search-result-list-elements/thesis/thesis-search-result-list-element.component';
 import { OrgUnitSidebarSearchListElementComponent } from '../../entity-groups/research-entities/item-list-elements/sidebar-search-list-elements/org-unit/org-unit-sidebar-search-list-element.component';
 import { PersonSidebarSearchListElementComponent } from '../../entity-groups/research-entities/item-list-elements/sidebar-search-list-elements/person/person-sidebar-search-list-element.component';
 import { ProjectSidebarSearchListElementComponent } from '../../entity-groups/research-entities/item-list-elements/sidebar-search-list-elements/project/project-sidebar-search-list-element.component';
@@ -189,6 +190,7 @@ const ENTRY_COMPONENTS = [
   ProjectSearchResultListElementComponent,
   ProjectSidebarSearchListElementComponent,
   PublicationSidebarSearchListElementComponent,
+  ThesisSearchResultListElementComponent,
   WorkflowItemSearchResultAdminWorkflowListElementComponent,
   WorkflowItemSearchResultAdminWorkflowGridElementComponent,
   WorkspaceItemSearchResultAdminWorkflowListElementComponent,

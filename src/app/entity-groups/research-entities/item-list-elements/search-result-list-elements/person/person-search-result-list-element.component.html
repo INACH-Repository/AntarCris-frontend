@@ -29,15 +29,24 @@
       <span *ngIf="linkType === linkTypes.None"
               class="lead"
               [innerHTML]="dsoTitle || ('person.listelement.no-title' | translate)"></span>
-        <div class="text-muted">
-            <ds-truncatable-part [id]="dso.id" [minLines]="1">
-            <div *ngIf="dso.allMetadata(['person.jobTitle']).length > 0"
-                  class="item-list-job-title">
-              <span *ngFor="let value of allMetadataValues(['person.jobTitle']); let last=last;">
-                <span [innerHTML]="value"></span>
-              </span>
-            </div>
-          </ds-truncatable-part>
+        <div *ngIf="dso.firstMetadataValue('person.affiliation.name')">
+          <span *ngFor="let orgunit of dso.allMetadata('person.affiliation.name'); let i=index; let last=last;">
+            <ds-metadata-link-view [item]="dso" [metadata]="orgunit" metadataName="ORGUNIT"></ds-metadata-link-view><span *ngIf="!last">; </span>
+          </span>
+         </div>
+        <div *ngIf="dso.firstMetadataValue('person.identifier.orcid') as metadataValue">
+          <span class="d-flex align-items-center">
+            <a href="https://orcid.org/{{metadataValue}}" target="_blank">
+              {{ metadataValue }}
+            </a>
+            <img
+                class="orcid-icon"
+                alt="orcid-logo"
+                src="assets/images/orcid.logo.icon.svg"
+                width="19"
+                height="19"
+                />
+          </span>
         </div>
         <ds-additional-metadata [object]="dso"></ds-additional-metadata>
         </ds-truncatable>

@@ -2843,11 +2843,44 @@
   // "error.validation.metadata.qualifier.max-length": "This field may not contain more than 64 characters",
   "error.validation.metadata.qualifier.max-length": "Este campo no puede contener mas de 64 caracteres",
 
+  // "explore.index.anid_oecd": "ANID lines",
+  "explore.index.anid_oecd": "Líneas ANID",
+
+  // "explore.index.country": "Country",
+  "explore.index.country": "País",
+
+  // "explore.index.fullName": "Full name",
+  "explore.index.fullName": "Nombre completo",
+
+  // "explore.index.fundername": "Funder",
+  "explore.index.fundername": "Institución financiadora",
+
+  // "explore.index.implementingInstitution": "Implementing institution",
+  "explore.index.implementingInstitution": "Organización",
+
+  // "explore.index.organizationName": "Institution name",
+  "explore.index.organizationName": "Nombre de institución",
+
   // "explore.index.ods": "Sustainable Development Goals",
   "explore.index.ods": "Objetivos de Desarrollo Sostenible",
 
-  // "explore.index.procien_lines": "Procien lines",
-  "explore.index.procien_lines": "Lineas Procien",
+  // "explore.index.principalInvestigator": "Principal investigator",
+  "explore.index.principalInvestigator": "Investigador a cargo",
+
+  // "explore.index.procien_lines": "INACH lines",
+  "explore.index.procien_lines": "Lineas INACH",
+
+  // "explore.index.projectEndDate": "End date",
+  "explore.index.projectEndDate": "Fecha de inicio",
+
+  // "explore.index.projectStartDate": "Start date",
+  "explore.index.projectStartDate": "Fecha de termino",
+
+  // "explore.index.quartile": "Quartile",
+  "explore.index.quartile": "Cuatil",
+
+  // "explore.index.research_topic": "Research topic",
+  "explore.index.research_topic": "Tópico de investigación",
 
   // "feed.description": "Syndication feed",
   "feed.description": "Hilo de sindicación",
@@ -4324,6 +4357,15 @@
 
   // "item.preview.dspace.entity.type": "Entity Type:",
   "item.preview.dspace.entity.type": "Tipo de entidad:",
+
+  // "item.project.endDate": "To:",
+  "item.project.endDate": "Desde:",
+
+  // "item.project.startDate": "From:",
+  "item.project.startDate": "Hasta:",
+
+  // "item.project.fundedBy": "Funded by: ",
+  "item.project.fundedBy": "Financiado por: ",
 
   // "item.select.confirm": "Confirm selected",
   "item.select.confirm": "Confirmar seleccionado",
@@ -6518,8 +6560,14 @@
   // "search.filters.applied.f.title": "Title",
   "search.filters.applied.f.title": "Título",
 
+  // "search.filters.applied.f.anid_eocd": "ANID lines",
+  "search.filters.applied.f.anid_eocd": "Líneas ANID",
+
   // "search.filters.applied.f.author": "Author",
   "search.filters.applied.f.author": "Autor",
+
+  // "search.filters.applied.f.country": "Country",
+  "search.filters.applied.f.country": "País",
 
   // "search.filters.applied.f.dateIssued.max": "End date",
   "search.filters.applied.f.dateIssued.max": "Fecha de finalización",
@@ -6533,6 +6581,15 @@
   // "search.filters.applied.f.discoverable": "Non-discoverable",
   "search.filters.applied.f.discoverable": "Privado",
 
+  // "search.filters.applied.f.fullName": "Full name",
+  "search.filters.applied.f.fullName": "Nombre completo",
+
+  // "search.filters.applied.f.fundername": "Funder",
+  "search.filters.applied.f.fundername": "Institución financiadora",
+
+  // "search.filters.applied.f.research_topic": "Research topic",
+  "search.filters.applied.f.research_topic": "Tópico de investigación",
+
   // "search.filters.applied.f.entityType": "Item Type",
   "search.filters.applied.f.entityType": "Tipo de ítem",
 
@@ -6544,6 +6601,12 @@
 
   // "search.filters.applied.f.original_bundle_descriptions": "File description",
   "search.filters.applied.f.original_bundle_descriptions": "Descripción del archivo",
+
+  // "search.filters.applied.f.organizationName": "Institution name",
+  "search.filters.applied.f.organizationName": "Nombre de institución",
+
+  // "search.filters.applied.f.implementingInstitution": "Implementing institution",
+  "search.filters.applied.f.implementingInstitution": "Organización",
 
   // "search.filters.applied.f.itemtype": "Type",
   "search.filters.applied.f.itemtype": "Tipo",
@@ -6575,8 +6638,20 @@
   // "search.filters.applied.f.ods": "Sustainable Development Goals",
   "search.filters.applied.f.ods": "Objetivos de Desarrollo Sostenible",
 
-  // "search.filters.applied.f.procien_lines": "Procien Lines",
-  "search.filters.applied.f.procien_lines": "Lineas Procien",
+  // "search.filters.applied.f.principalInvestigator": "Principal investigator",
+  "search.filters.applied.f.principalInvestigator": "Investigador a cargo",
+
+  // "search.filters.applied.f.projectEndDate": "End date",
+  "search.filters.applied.f.projectEndDate": "Fecha de termino",
+
+  // "search.filters.applied.f.projectStartDate": "Start date",
+  "search.filters.applied.f.projectStartDate": "Fecha de inicio",
+
+  // "search.filters.applied.f.procien_lines": "INACH Lines",
+  "search.filters.applied.f.procien_lines": "Lineas INACH",
+
+  // "search.filters.applied.f.quartile": "Quartile",
+  "search.filters.applied.f.quartile": "Cuartil",
 
   // "search.filters.applied.operator.equals": "",
   "search.filters.applied.operator.equals": "",
@@ -6608,6 +6683,15 @@
   // "search.filters.filter.title.label": "Search Title",
   "search.filters.filter.title.label": "Buscar por título",
 
+  // "search.filters.filter.anid_oecd.head": "ANID lines",
+  "search.filters.filter.anid_oecd.head": "Líneas ANID",
+
+  // "search.filters.filter.anid_oecd.placeholder": "ANID lines",
+  "search.filters.filter.anid_oecd.placeholder": "Líneas ANID",
+
+  // "search.filters.filter.anid_oecd.label": "Search ANID lines",
+  "search.filters.filter.anid_oecd.label": "Search líneas ANID",
+
   // "search.filters.filter.author.head": "Author",
   "search.filters.filter.author.head": "Autor",
 
@@ -6628,6 +6712,15 @@
 
   // "search.filters.filter.collapse": "Collapse filter",
   "search.filters.filter.collapse": "Contraer filtro",
+
+  // "search.filters.filter.country.head": "Country",
+  "search.filters.filter.country.head": "País",
+
+  // "search.filters.filter.country.placeholder": "Country",
+  "search.filters.filter.country.placeholder": "País",
+
+  // "search.filters.filter.country.label": "Search country",
+  "search.filters.filter.country.label": "Buscar país",
 
   // "search.filters.filter.creativeDatePublished.head": "Date Published",
   "search.filters.filter.creativeDatePublished.head": "Fecha de publicación",
@@ -6707,14 +6800,32 @@
   // "search.filters.filter.expand": "Expand filter",
   "search.filters.filter.expand": "Expandir filtro",
 
-  // "search.filters.filter.procien_lines.head": "Procien Lines",
-  "search.filters.filter.procien_lines.head": "Lineas Procien",
+  // "search.filters.filter.principalInvestigator.head": "Principal investigator",
+  "search.filters.filter.principalInvestigator.head": "Investigador a cargo",
 
-  // "search.filters.filter.procien_lines.placeholder": "Procien Lines",
-  "search.filters.filter.procien_lines.placeholder": "Lineas Procien",
+  // "search.filters.filter.principalInvestigator.palceholder": "Principal investigator",
+  "search.filters.filter.principalInvestigator.palceholder": "Investigador a cargo",
 
-  // "search.filters.filter.procien_lines.label": "Procien Lines",
-  "search.filters.filter.procien_lines.label": "Lineas Procien",
+  // "search.filters.filter.principalInvestigator.label": "Search principal investigator",
+  "search.filters.filter.principalInvestigator.label": "Buscar investigador a cargo",
+
+  // "search.filters.filter.procien_lines.head": "INACH Lines",
+  "search.filters.filter.procien_lines.head": "Lineas INACH",
+
+  // "search.filters.filter.procien_lines.placeholder": "INACH Lines",
+  "search.filters.filter.procien_lines.placeholder": "Lineas INACH",
+
+  // "search.filters.filter.procien_lines.label": "INACH Lines",
+  "search.filters.filter.procien_lines.label": "Lineas INACH",
+
+  // "search.filters.filter.quartile.head": "Quartile",
+  "search.filters.filter.quartile.head": "Cuartil",
+
+  // "search.filters.filter.quartile.placeholder": "Quartile",
+  "search.filters.filter.quartile.placeholder": "Cuartil",
+
+  // "search.filters.filter.quartile.label": "Search quartile",
+  "search.filters.filter.quartile.label": "Buscar cuartil",
 
   // "search.filters.filter.ods.head": "Sustainable Development Goals",
   "search.filters.filter.ods.head": "Objetivos de Desarrollo Sostenible",
@@ -6745,6 +6856,15 @@
 
   // "search.filters.filter.original_bundle_descriptions.label": "Search File description",
   "search.filters.filter.original_bundle_descriptions.label": "Buscar por descripción del archivo",
+
+  // "search.filters.filter.implementingInstitution.head": "Implementing institution",
+  "search.filters.filter.implementingInstitution.head": "Organización",
+
+  // "search.filters.filter.implementingInstitution.placeholder": "Implementing institution",
+  "search.filters.filter.implementingInstitution.placeholder": "Organización",
+
+  // "search.filters.filter.implementingInstitution.label": "Search Implementing institution",
+  "search.filters.filter.implementingInstitution.label": "Buscar organización",
 
   // "search.filters.filter.itemtype.head": "Type",
   "search.filters.filter.itemtype.head": "Tipo",
@@ -6818,6 +6938,15 @@
   // "search.filters.filter.organizationFoundingDate.label": "Search date founded",
   "search.filters.filter.organizationFoundingDate.label": "Búsqueda por Fecha de fundación",
 
+  // "search.filters.filter.organizationName.head": "Institution name",
+  "search.filters.filter.organizationName.head": "Nombre de institución",
+
+  // "search.filters.filter.organizationName.placeholder": "Institution name",
+  "search.filters.filter.organizationName.placeholder": "Nombre de institución",
+
+  //"search.filters.filter.organizationName.label": "Search institution name",
+  "search.filters.filter.organizationName.label": "Buscar nombre de institución",
+
   // "search.filters.filter.scope.head": "Scope",
   "search.filters.filter.scope.head": "Alcance",
 
@@ -6854,11 +6983,38 @@
   // "search.filters.filter.show-tree": "Browse {{ name }} tree",
   "search.filters.filter.show-tree": "Examinar árbol {{ name }}",
 
+  // "search.filters.filter.fullName.head": "Full name",
+  "search.filters.filter.fullName.head": "Nombre completo",
+
+  // "search.filters.filter.fullName.palceholder": "Full name",
+  "search.filters.filter.fullName.palceholder": "Nombre completo",
+
+  // "search.filters.filter.fullName.label": "Search full name",
+  "search.filters.filter.fullName.label": "Buscar nombre completo",
+
+  // "search.filters.filter.fundername.head": "Funder",
+  "search.filters.filter.fundername.head": "Institución financiadora",
+
+  // "search.filters.filter.fundername.placeholder": "Funder",
+  "search.filters.filter.fundername.placeholder": "Institución financiadora",
+
+  // "search.filters.filter.fundername.label": "Search funder",
+  "search.filters.filter.fundername.label": "Buscar institución financiadora",
+
   // "search.filters.filter.funding.head": "Funding",
   "search.filters.filter.funding.head": "Financiación",
 
   // "search.filters.filter.funding.placeholder": "Funding",
   "search.filters.filter.funding.placeholder": "Financiación",
+
+  // "search.filters.filter.research_topic.head": "Research topic",
+  "search.filters.filter.research_topic.head": "Tópico de investigación",
+
+  // "search.filters.filter.research_topic.placeholder": "Research topic",
+  "search.filters.filter.research_topic.placeholder": "Tópico de investigación",
+
+  // "search.filters.filter.research_topic.label": "Search research topic",
+  "search.filters.filter.research_topic.label": "Buscar tópico de investigación",
 
   // "search.filters.filter.supervisedBy.head": "Supervised By",
   "search.filters.filter.supervisedBy.head": "Supervisado Por",
@@ -8416,6 +8572,12 @@
 
   // "subscriptions.table.empty.message": "You do not have any subscriptions at this time. To subscribe to email updates for a Community or Collection, use the subscription button on the object's page.",
   "subscriptions.table.empty.message": "Usted no tiene suscripciones. Para subscribirse a las actualizaciones por correo electrónico de una Comunidad o Colección, utilice el botón de suscripción en la página del objeto.",
+
+  // "thesis.listelement.badge": "Thesis",
+  "thesis.listelement.badge": "Tesis",
+
+  // "thesis.search.results.head": "Thesis Search Results",
+  "thesis.search.results.head": "Resultados de búsqueda de tesis",
 
   // "thumbnail.default.alt": "Thumbnail Image",
   "thumbnail.default.alt": "Miniatura",

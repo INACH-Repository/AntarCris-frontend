@@ -23,3 +23,6 @@ crisLayout:
       orientation: horizontal
     default:
       orientation: horizontal
+
+browseBy:
+  showThumbnails: false
