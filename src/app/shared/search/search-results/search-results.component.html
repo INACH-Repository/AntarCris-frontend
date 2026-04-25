@@ -28,7 +28,7 @@
             [hidePaginationDetail]="hidePaginationDetail"
             [showLabel]="showLabel"
             [showMetrics]="showMetrics"
-            [showThumbnails]="showThumbnails"
+            [showThumbnails]="false"
             [showCorrection]="showCorrection"
             [showWorkflowStatistics]="showWorkflowStatistics"
             [customData]="customData"
@@ -42,7 +42,7 @@
 <ds-search-results-skeleton
   *ngIf="isLoading()"
   [showFallbackMessages]="true"
-  [showThumbnails]="showThumbnails"
+  [showThumbnails]="false"
   [numberOfResults]="searchConfig.pagination.pageSize"
 ></ds-search-results-skeleton>
 
