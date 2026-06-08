@@ -99,8 +99,20 @@ export class CrisLayoutBoxContainerComponent implements OnInit {
       ],
       parent: this.injector,
     });
+    //console.log('BOX', this.box);
+    //console.log('BOX TYPE RAW', this.box?.boxType);
+    //console.log('ENUM COLLAB', LayoutBox.COLLABORATION);
 
     this.componentLoader = this.getComponent();
+
+    //console.log('COMPONENT LOADER', this.componentLoader);
+    //console.log('BOX', this.box);
+    //console.log('BOX TYPE', this.box?.boxType);
+
+    //this.componentLoader = this.getComponent();
+
+    //console.log('COMPONENT LOADER', this.componentLoader);
+    //this.componentLoader = this.getComponent();
 
     this.boxHeaderI18nKey = this.boxI18nPrefix + this.box.entityType + '.' + this.box.shortname;
     this.boxHeaderGenericI18nKey = this.boxI18nPrefix + this.box.shortname;

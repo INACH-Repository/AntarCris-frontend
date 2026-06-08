@@ -19,6 +19,7 @@ import {
 } from 'ng2-google-charts';
 
 import { CollaborationsTableComponent } from './collaborations-table/collaborations-table.component';
+import { countryIsoToName } from './iso-country'
 
 @Component({
   selector: 'ds-collaborations',
@@ -87,10 +88,10 @@ export class CollaborationsComponent implements OnChanges {
       this.publicationsByCountry = this.collaborations.map((collaboration) => [
         collaboration.countryCode,
         collaboration.total,
-      ]);
+      ]); //export const countryIsoToName = (isoCode: string): string => {
     } else if (this.collaborations && typeof this.collaborations === 'object') {
       this.publicationsByCountry = Object.entries(this.collaborations).map(
-        ([countryCode, total]) => [countryCode, total],
+        ([countryCode, total]) => [countryIsoToName(countryCode), total],
       );
     } else {
       this.publicationsByCountry = [];

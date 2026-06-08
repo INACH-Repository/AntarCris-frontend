@@ -1,16 +1,22 @@
 .banner-description {
-    color: #fff;
     text-align: center;
     text-wrap: balance;
     .display-4 {
+        color: #382483;
         font-size: 40px;
         font-weight: 700;
         line-height: 48px;
     }
     .lead {
+        color: #382483;
         font-size: 18px;
         font-weight: 500;
         line-height: 26px;
+    }
+    .p {
+        display: flex;
+        font-size: 20px;
+        color: #382483;
     }
 }
 
