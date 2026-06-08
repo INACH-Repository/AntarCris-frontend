@@ -96,6 +96,30 @@ export class CrisLayoutCollaborationBoxComponent extends CrisLayoutBoxModelCompo
     );
   }
 
+    /*ngOnInit(): void {
+    console.log('COLLAB MAP BEFORE');
+    super.ngOnInit();
+    console.log('COLLAB MAP AFTER');
+
+    this.searchFilter = `scope=${this.item.id}`;
+    this.http.get<any[]>(`${this.baseUrl}/api/nodo/collaborations?sort=dc.date.issued,DESC&page=0&scope=${this.item.id}`)
+    .pipe(
+      catchError((error) => {
+        console.error('Error fetching collaborations');
+        this.loadingCollaborations = false;
+        this.cdr.detectChanges();
+        return [];
+      })
+    )
+    .subscribe(
+      (response) => {
+        this.collaborations = response;
+        this.loadingCollaborations = false;
+        this.cdr.detectChanges();
+      },
+    );
+  }*/
+
   protected getOwner(user: EPerson) {
     return this.item.firstMetadataValue('dspace.object.owner', { authority: user.id });
   }

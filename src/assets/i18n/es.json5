@@ -2882,8 +2882,175 @@
   // "explore.index.research_topic": "Research topic",
   "explore.index.research_topic": "Tópico de investigación",
 
-  // "feed.description": "Syndication feed",
-  "feed.description": "Hilo de sindicación",
+  "explore.browse-section.title": "Buscar",
+
+  "explore.counters-section.orgunit": "Instituciones",
+
+  "explore.counters-section.rprofiles": "Investigadores",
+
+  "explore.counters-section.publications": "Publicaciones",
+
+  "explore.counters-section.project_funding": "Proyectos",
+
+  "explore.facet-section.title": "Descubrir",
+
+  "explore.index.all": "Todo",
+
+  "explore.index.author": "Autor",
+
+  "explore.index.graphitemtype": "Grafico por entidad",
+
+  "explore.index.graphpubldate": "Grafico por fecha",
+
+  "explore.index.birthDate": "Cumpleaños",
+
+  "explore.index.metric.view": "Más visto",
+
+  "explore.index.metric.download": "Más descargado",
+
+  "explore.index.metric.scopus.citation": "Más citado",
+
+  "explore.index.chart.pie.itemtype_filter": "Tipo de entidad",
+
+  "explore.index.chart.bar.dateIssued.year": "Año",
+
+  "explore.index.dateissued": "Fecha de emisión",
+
+  "explore.index.dc.date.accessioned": "Entidades recientes",
+
+  "explore.index.dc.title": "Título",
+
+  "explore.index.editor": "Editor",
+
+  "explore.index.eqtitle": "Título",
+
+  "explore.index.eqowner": "Investigador",
+
+  "explore.index.eqorgunit": "Institución",
+
+  "explore.index.entityType": "Tipo de entidad",
+
+  "explore.index.familyName": "Apellido",
+
+  "explore.index.funding": "Financiamiento",
+
+  "explore.index.givenName": "Nombre",
+
+  "explore.index.has_content_in_original_bundle": "Tiene contenido",
+
+  "explore.index.isAuthorOfPublication": "Autores",
+
+  "explore.index.isJournalOfPublication": "Revista",
+
+  "explore.index.isOrgUnitOfPerson": "Institución del investigador",
+
+  "explore.index.isOrgUnitOfProject": "Institución del proyecto",
+
+  "explore.index.isOrgUnitOfPublication": "Institución de la publicación",
+
+  "explore.index.isPersonOfOrgUnit": "Institución del investigador",
+
+  "explore.index.isPersonOfProject": "Investigador del proyecto",
+
+  "explore.index.isProjectOfOrgUnit": "Institucion del proyecto",
+
+  "explore.index.isProjectOfPerson": "Proyecto del investigador",
+
+  "explore.index.isProjectOfPublication": "Publicacion del proyecto",
+
+  "explore.index.isPublicationOfAuthor": "Publicacion del autor",
+
+  "explore.index.isPublicationOfJournalIssue": "Publicacion de la revista",
+
+  "explore.index.isPublicationOfOrgUnit": "Publicacion de la institución",
+
+  "explore.index.isPublicationOfProject": "Publicacion del proyecto",
+
+  "explore.index.itemidentifier": "Identificador",
+
+  "explore.index.jobTitle": "Cargo",
+
+  "explore.index.knowsLanguage": "Idiomas",
+
+  "explore.index.organization": "Institución",
+
+  "explore.index.organizationAddressCountry": "País de la institución",
+
+  "explore.index.organizationAddressLocality": "Localidad de la institución",
+
+  "explore.index.organizationFoundingDate": "Fecha de fundación",
+
+  "explore.index.organizationLegalName": "Nombre legal de la institución",
+
+  "explore.index.original_bundle_descriptions": "Descripciones originales",
+
+  "explore.index.original_bundle_filenames": "Archivos originales",
+
+  "explore.index.ouname": "Nombre",
+
+  "explore.index.projectOrgUnits": "Instituciones",
+
+  "explore.index.personOrgUnits": "Instituciones",
+
+  "explore.index.pjtitle": "Cargo",
+
+  "explore.index.projectinvestigators": "Investigador",
+
+  "explore.index.rodept": "Departamento",
+
+  "explore.index.rpdept": "Departamento",
+
+  "explore.index.rpname": "Nombre",
+
+  "explore.index.subject": "Asignatura",
+
+  "explore.index.title": "Título",
+
+  "explore.index.type": "Tipo",
+
+  "explore.index.rsoTitle": "Título",
+
+  "explore.index.procien_lines": "Lineas de investigación PROCIEN",
+
+  "explore.counters-section.orgunit": "Instituciones",
+
+  "explore.counters-section.rprofiles": "Investigadores",
+
+  "explore.counters-section.publications": "Publicaciones",
+
+  "explore.counters-section.project_funding": "Proyectos",
+
+  "explore.search-section.infrastructure.title": "Infraestructura",
+
+  "explore.search-section.fundings.title": "Buscar proyectos",
+
+  "explore.search-section.fundings_and_projects.title": "Buscar proyectos",
+
+  "explore.search-section.orgunit.title": "Buscar instituciones",
+
+  "explore.search-section.publications.title": "Buscar publicaciones",
+
+  "explore.search-section.researchoutputs.title": "Buscar publicaciones",
+
+  "explore.search-section.researcherprofiles.title": "Buscar personas",
+
+  "explore.search-section.search-button": "Buscar",
+
+  "explore.fundings.breadcrumbs": "Financiamiento",
+
+  "explore.projects.breadcrumbs": "Proyectos",
+
+  "explore.fundings_and_projects.breadcrumbs": "Proyectos",
+
+  "explore.orgunit.breadcrumbs": "Organizaciones",
+
+  "explore.publications.breadcrumbs": "Publicaciones",
+
+  "explore.researchoutputs.breadcrumbs": "Publicaciones",
+
+  "explore.researcherprofiles.breadcrumbs": "Investigadores",
+
+  "browse.metadata.rsoTitle.breadcrumbs": "Buscar por título",
 
   // "file-download-link.restricted": "Restricted bitstream",
   "file-download-link.restricted": "Archivo restringido",
@@ -6046,6 +6213,24 @@
 
   // "media-viewer.playlist": "Playlist",
   "media-viewer.playlist": "Lista de reproducción",
+
+  "submission.sections.submit.progressbar.describe.publication": "Informacion base de la publicación",
+
+  "submission.sections.submit.progressbar.describe.publication_bibliographic_details": "Detalles bibliograficos de la publicación",
+
+  "submission.sections.submit.progressbar.describe.publication_indexing": "Detalles extras de la publicación",
+
+  "submission.sections.submit.progressbar.describe.publication_references": "Referencias de la publicación",
+
+  "submission.sections.submit.progressbar.describe.orgunit": "Información base de la institución",
+
+  "submission.sections.submit.progressbar.describe.person": "Información base de la persona",
+
+  "submission.sections.submit.progressbar.describe.project": "Informacion base del proyecto",
+
+  "submission.sections.submit.progressbar.describe.thesis": "Informacion base de la tesis",
+
+  "submission.sections.submit.progressbar.describe.thesis_indexing": "Detalles extras de la tesis",
 
   // "suggestion.loading": "Loading ...",
   "suggestion.loading": "Cargando ...",
@@ -10432,4 +10617,217 @@
 
   "layout.tab.header.Person.otherinfo": "Resúmen profesional",
 
+//TEXTOS ASOCIADOS A LAS TESIS
+  "menu.section.explore_thesis": "Tesis",
+
+  "explore.counters-section.thesis": "Tesis",
+
+  "thesis.search.results.head": "Resultados de búsqueda de Tesis",
+
+  "thesis.listelement.badge": "Tesis",
+
+  "search.filters.applied.charts.thesis.title": "",
+
+  "thesis.page.titleprefix": "Tesis",
+
+  "explore.thesis.breadcrumbs": "Tesis",
+
+  "explore.search-section.thesis.title": "Buscar tesis",
+
+  "collaborations.no-data": "No se encontraron publicaciones" ,
+
+  "remote.error": "No se encontraron items",
+
+  "search.filters.applied.charts.no.data.found": "No se encontraron items",
+
+  "search.filters.applied.charts.show.hide": "Mostrar/Ocultar",
+
+  "search.filters.applied.charts.RELATION.OrgUnit.rpprojects.title": "Proyectos financiados",
+
+  "search.filters.applied.charts.RELATION.OrgUnit.rppublications.title": "Publicaciones",
+
+  "search.filters.applied.charts.RELATION.Person.projects.title": "Proyectos",
+
+  "search.filters.applied.charts.RELATION.Person.researchoutputs.title": "Publicaciones",
+
+  "search.filters.applied.charts.RELATION.Project.fundings.title": "Proyectos Financiados",
+
+  "search.filters.applied.charts.RELATION.Project.researchoutputs.title": "Publicaciones",
+
+  "search.filters.applied.charts.RELATION.OrgUnit.projects.title": "Proyectos ejecutados",
+
+  "search.filters.applied.charts.RELATION.OrgUnit.thesis.title": "Tesis",
+
+
+  // Layout - Autogenerated i18n keys: Tab headers
+  "layout.tab.header.Person.details": "Perfil",
+  "layout.tab.header.Person.publications": "Publicaciones",
+  "layout.tab.header.Person.collaboration": "Colaboraciones",
+  "layout.tab.header.Person.projects": "Proyectos",
+  "layout.tab.header.Person.otherinfo": "Resumen profesional",
+  "layout.tab.header.Person.indicators": "Metricas",
+  "layout.tab.header.Person.secure": "Secured Tab",
+  "layout.tab.header.OrgUnit.maininformation": "Informacion",
+  "layout.tab.header.OrgUnit.organizations": "Instituciones",
+  //"layout.tab.header.OrgUnit.publications": "Publicaciones",
+  "layout.tab.header.OrgUnit.rppublications": "Publicaciones",
+  "layout.tab.header.OrgUnit.projects": "Proyectos ejecutados",
+  "layout.tab.header.OrgUnit.rpprojects": "Proyectos financiados",
+  "layout.tab.header.OrgUnit.people": "Personas",
+  "layout.tab.header.OrgUnit.thesis": "Tesis",
+  "layout.tab.header.OrgUnit.collaboration": "Colaboraciones",
+  "layout.tab.header.Project.details": "Detalles",
+  "layout.tab.header.Project.outputs::projectoutputs": "Outputs::Publications",
+  "layout.tab.header.Project.outputs::fundings": "Outputs::Fundings",
+  "layout.tab.header.Journal.details": "Detalles",
+  "layout.tab.header.Event.details": "Detalles",
+  "layout.tab.header.Equipment.details": "Detalles",
+  "layout.tab.header.Funding.details": "Detalles",
+  "layout.tab.header.Publication.details": "Detalles",
+  "layout.tab.header.Product.details": "Detalles",
+  "layout.tab.header.Patent.details": "Detalles",
+
+  // Layout - Autogenerated i18n keys: box headers
+  "layout.box.header.Person.projects": "Proyectos",
+  "layout.box.header.Person.researchoutputs": "Publicaciones",
+  "layout.box.header.Person.qualifications": "Actitudes profesionales",
+  "layout.box.header.Person.researcherprofile": "Perfil",
+  "layout.box.header.Person.metrics": "Metricas",
+  "layout.box.header.Person.usagemetrics": "Metricas de uso",
+  "layout.box.header.Person.secure": "Caja de seguridad",
+
+  "layout.box.header.OrgUnit.rpprojects": "Proyectos",
+  "layout.box.header.OrgUnit.publications": "Publicaciones",
+  "layout.box.header.OrgUnit.rppublications": "Publicaciones",
+  "layout.box.header.OrgUnit.people": "Investigadores",
+  "layout.box.header.OrgUnit.projects": "Proyectos",
+  "layout.box.header.OrgUnit.description": "Descripcion",
+  "layout.box.header.OrgUnit.organizations": "Unidades",
+  "layout.box.header.OrgUnit.details": "Detalles",
+  "layout.box.header.OrgUnit.metrics": "Metricas",
+
+  "layout.box.header.Project.description": "Descripcion",
+  "layout.box.header.Project.researchoutputs": "Publicaciones",
+  "layout.box.header.Project.fundings": "Financiamiento",
+  "layout.box.header.Project.metrics": "Metricas",
+  "layout.box.header.Project.funding": "Financiamiento",
+  "layout.box.header.Project.researchers": "Investigadores",
+  "layout.box.header.Project.organizations": "Instituciones",
+  "layout.box.header.Project.categorization": "Categorización",
+
+  "layout.box.header.Publication.details": "Detalles",
+  "layout.box.header.Publication.metrics": "Metricas",
+  "layout.box.header.Publication.altmetrics": "Metricas alternativas",
+  "layout.box.header.Publication.usagemetrics": "Metricas de uso",
+  "layout.box.header.Publication.authors": "Informacion de los autores",
+  "layout.box.header.Publication.research": "Categorización",
+  "layout.box.header.Publication.abstract": "Resumen",
+  "layout.box.header.Publication.keywords": "Palabras claves",
+
+  "layout.box.header.Thesis.authors": "Informacion del autor",
+  "layout.box.header.Thesis.research": "Categorización",
+  "layout.box.header.Thesis.abstract": "Resumen",
+  "layout.box.header.Thesis.keywords": "Palabras claves",
+
+  // Layout - Autogenerated i18n keys: metadata
+  "layout.field.label.Project.[dc.description.abstract]": "Descripcion",
+  "layout.field.label.Project.[dc.subject]": "Palabras claves",
+  "layout.field.label.Project.[oairecerif.acronym]": "Acronimo",
+  "layout.field.label.Project.[dc.title]": "Título del proyecto",
+  "layout.field.label.Project.[crispj.coordinator]": "Institución ejecutora",
+  "layout.field.label.Project.[crispj.partnerou]": "Instituciones colaborantes",
+  "layout.field.label.Project.[oairecerif.internalid]": "Codigo interno",
+  "layout.field.label.Project.[crispj.investigator]": "Investigador principal",
+  "layout.field.label.Project.[oairecerif.project.status]": "Estado",
+  "layout.field.label.Project.[oairecerif.project.startDate]": "Fecha de inicio",
+  "layout.field.label.Project.[oairecerif.project.endDate]": "Fecha de termino",
+  "layout.field.label.Project.[crispj.coinvestigators]": "Investigadores",
+  "layout.field.label.Project.[crispj.organization]": "Instituciones",
+  "layout.field.label.Project.[dc.relation.equipment]": "Usos",
+  "layout.field.label.Project.[oairecerif.identifier.url]": "Pagina web del proyecto",
+  "layout.field.label.Project.[crispj.openaireid]": "OpenAIRE ID",
+  "layout.field.label.Project.[oairecerif.amount]": "Monto CLP",
+  "layout.field.label.Project.[antarc.funder.ror]": "ID ROR",
+  "layout.field.label.Project.[antarc.project.anid]": "Codigo ANID",
+  "layout.field.label.Project.[antarc.area.ods]": "Objetivo de desarrollo sostenible",
+  "layout.field.label.Project.[antarc.area.anid]": "Area ANID",
+  "layout.field.label.Project.[antarc.area.inach]": "Linea de investigacion PROCIEN",
+
+  "layout.field.label.Person.[dc.subject]": "Intereses de investigacion",
+  "layout.field.label.Person.[person.knowsLanguage]": "Idiomas",
+  "layout.field.label.Person.[crisrp.qualification]": "Formacion",
+  "layout.field.label.Person.[dc.title]": "Nombre",
+  "layout.field.label.Person.[person.affiliation.name]": "Afiliacion principal",
+  "layout.field.label.Person.[oairecerif.identifier.url]": "Sitio web",
+  "layout.field.label.Person.[person.email]": "Email",
+  "layout.field.label.Person.[person.identifier.orcid]": "ORCID",
+  "layout.field.label.Person.[person.identifier.scopus-author-id]": "Scopus Author ID",
+  "layout.field.label.Person.[person.identifier.rid]": "Researcher ID",
+  "layout.field.label.Person.[dc.description.abstract]": "Biografia",
+  "layout.field.label.Person.[oairecerif.person.affiliation]": "Afiliacion",
+  "layout.field.label.Person.[crisrp.education]": "Educacion",
+  "layout.field.label.Person.[crisrp.country]": "Pais",
+  "layout.field.label.Person.[person.birthDate]": "Fecha de nacimiento",
+
+  "layout.field.label.Publication.[dc.relation.ispartof]": "Revista",
+  "layout.field.label.Publication.[dc.relation.issn]": "ISSN",
+  "layout.field.label.Publication.[dc.date.issued]": "Fecha publicación",
+  "layout.field.label.Publication.[dc.contributor.author]": "Autores",
+  "layout.field.label.Publication.[dc.contributor.editor]": "Editor(s)",
+  "layout.field.label.Publication.[dc.identifier.doi]": "DOI",
+  "layout.field.label.Publication.[dc.description.abstract]": "Resument",
+  "layout.field.label.Publication.[dc.relation.project]": "Proyecto(s)",
+  "layout.field.label.Publication.[dc.relation.funding]": "Financiamiento(s)",
+  "layout.field.label.Publication.[dc.subject]": "Asignaturas",
+  "layout.field.label.Publication.BITSTREAM": "Archivo(s)",
+  "layout.field.label.Publication.[antarc.area.ods]": "Objetivo de desarrollo sostenible",
+  "layout.field.label.Publication.[antarc.area.anid]": "Area ANID",
+  "layout.field.label.Publication.[antarc.area.inach]": "Linea de investigación PROCIEN",
+  "layout.field.label.Publication.[dc.identifier.doi]": "DOI",
+  "layout.field.label.Publication.[dc.relation.journal]": "Revista",
+  "layout.field.label.Publication.[antarc.citation.editorial]": "Editorial",
+  "layout.field.label.Publication.[oaire.citation.volume]": "Volumen",
+  "layout.field.label.Publication.[antarc.citation.edition]": "Edicion",
+  "layout.field.label.Publication.[antarc.citation.quartile]": "Cuartil",
+  "layout.field.label.Publication.[oaire.citation.startPage]": "Pagina de inicio",
+  "layout.field.label.Publication.[dc.relation.ispartofseries]": "Serie",
+  "layout.field.label.Publication.[antarc.citation.numreport]": "Numero de reporte",
+
+  "layout.field.label.Thesis.[antarc.area.ods]": "Objetivo de desarrollo sostenible",
+  "layout.field.label.Thesis.[antarc.area.anid]": "Area ANID",
+  "layout.field.label.Thesis.[antarc.area.inach]": "Linea de investigación PROCIEN",
+
+  "layout.field.label.OrgUnit.[organization.address.addressCountry]": "País",
+  "layout.field.label.OrgUnit.[organization.address.addressLocality]": "Ciudad",
+  "layout.field.label.OrgUnit.[dc.description.abstract]": "Descripción",
+  "layout.field.label.OrgUnit.[crisou.director]": "Director",
+  "layout.field.label.OrgUnit.[organization.parentOrganization]": "Institucion principal",
+  "layout.field.label.OrgUnit.[organization.foundingDate]": "Fecha de fundación",
+  "layout.field.label.OrgUnit.[crisou.boards]": "Jefatura",
+  "layout.field.label.OrgUnit.[organization.identifier.ror]": "ID ROR",
+  "layout.field.label.OrgUnit.[organization.identifier.isni]": "ID ISNI",
+  "layout.field.label.OrgUnit.[organization.identifier.rin]": "ID Ringgold",
+  "layout.field.label.OrgUnit.[organization.identifier.crossrefid]": "ID CrossRef",
+  "layout.field.label.OrgUnit.[dc.title]": "Nombre de la institución",
+  "layout.field.label.OrgUnit.[oairecerif.acronym]": "Acronimo",
+  "layout.field.label.OrgUnit.[oairecerif.identifier.url]": "Pagina Web",
+  "layout.field.label.OrgUnit.[antarc.institution.urlcris]": "Repositorio institucional",
+
+  // Layout - Autogenerated i18n keys: metadata groups
+  "layout.field.label.Person.NESTED[crisrp.qualification]": "Grado",
+  "layout.field.label.Person.NESTED[crisrp.qualification.start]": "Fecha inicio",
+  "layout.field.label.Person.NESTED[crisrp.qualification.end]": "Fecha termino",
+  "layout.field.label.Person.NESTED[oairecerif.affiliation.role]": "Cargo",
+  "layout.field.label.Person.NESTED[oairecerif.person.affiliation]": "Institución",
+  "layout.field.label.Person.NESTED[oairecerif.affiliation.startDate]": "Fecha inicio",
+  "layout.field.label.Person.NESTED[oairecerif.affiliation.endDate]": "Fecha termino",
+  "layout.field.label.Person.NESTED[crisrp.education.role]": "Grado",
+  "layout.field.label.Person.NESTED[crisrp.education]": "Institucion",
+  "layout.field.label.Person.NESTED[crisrp.education.start]": "Fecha inicio",
+  "layout.field.label.Person.NESTED[crisrp.education.end]": "Fecha termino",
+
+  "layout.field.label.Publication.NESTED[dc.contributor.author]": "Autor",
+  "layout.field.label.Publication.NESTED[oairecerif.author.affiliation]": "Institucion",
+  "layout.field.label.Publication.NESTED[dc.contributor.editor]": "Editor",
+  "layout.field.label.Publication.NESTED[oairecerif.editor.affiliation]": "Institucion",
 }

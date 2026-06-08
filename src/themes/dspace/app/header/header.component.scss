@@ -1,6 +1,7 @@
 :host {
   #main-site-header {
-    min-height: var(--ds-header-height);
+    //min-height: var(--ds-header-height);
+    min-height: 110px;
 
     @include media-breakpoint-up(md) {
       height: var(--ds-header-height);
@@ -14,7 +15,8 @@
   }
 
   img#header-logo {
-    height: var(--ds-header-logo-height);
+    //height: var(--ds-header-logo-height);
+    height: 75px;
   }
 
   button#navbar-toggler {
