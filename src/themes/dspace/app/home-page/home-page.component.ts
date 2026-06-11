@@ -20,7 +20,7 @@ import { ThemedTopSectionComponent } from '../../../../app/shared/explore/sectio
 import { ViewTrackerComponent } from '../../../../app/statistics/angulartics/dspace/view-tracker.component';
 import { HeroComponent } from './hero/hero.component';
 import { ResearchLinesComponent } from './research-lines/research-lines.component';
-import { SustainableGoalsComponent } from './sustainable-goals/sustainable-goals.component';
+//import { SustainableGoalsComponent } from './sustainable-goals/sustainable-goals.component';
 import { YearProductionSummaryComponent } from './year-production-summary/year-production-summary.component';
 
 @Component({
@@ -48,7 +48,7 @@ import { YearProductionSummaryComponent } from './year-production-summary/year-p
     AsyncPipe,
     HeroComponent,
     ResearchLinesComponent,
-    SustainableGoalsComponent,
+    //SustainableGoalsComponent,
     YearProductionSummaryComponent,
   ],
 })
