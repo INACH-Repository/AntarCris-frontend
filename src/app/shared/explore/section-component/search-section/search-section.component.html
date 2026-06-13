@@ -33,24 +33,26 @@
       </form>
     </div><br/>
 
-    <div class="search-tips-wrapper md-4">
-      <ngb-accordion [closeOthers]="true" activeIds="">
-        <ngb-panel id="search-tips-panel">
-          <ng-template ngbPanelTitle>
-            <span>
-              Glosario
-            </span>
-          </ng-template>
-          <ng-template ngbPanelContent>
-            <ul class="search-tips-list">
-              <li *ngFor="let tip of discoveryTexts">
-                {{ tip | translate }}
-              </li>
-            </ul>
-          </ng-template>
-        </ngb-panel>
-      </ngb-accordion>
-    </div>
+    <ng-container *ngIf="discoveryTexts?.length">
+      <div class="search-tips-wrapper md-4">
+        <ngb-accordion [closeOthers]="true" activeIds="">
+          <ngb-panel id="search-tips-panel">
+            <ng-template ngbPanelTitle>
+              <span>
+                Glosario
+              </span>
+            </ng-template>
+            <ng-template ngbPanelContent>
+              <ul class="search-tips-list">
+                <li *ngFor="let tip of discoveryTexts">
+                  {{ tip | translate }}
+                </li>
+              </ul>
+            </ng-template>
+          </ngb-panel>
+        </ngb-accordion>
+      </div>
+    </ng-container>
 
     <div class="col-md-12 d-flex justify-content-center" *ngIf="searchSection.searchType === 'basic'">
         <div class="col-md-8">
