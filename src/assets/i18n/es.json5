@@ -4526,10 +4526,10 @@
   "item.preview.dspace.entity.type": "Tipo de entidad:",
 
   // "item.project.endDate": "To:",
-  "item.project.endDate": "Desde:",
+  "item.project.endDate": "Hasta:",
 
   // "item.project.startDate": "From:",
-  "item.project.startDate": "Hasta:",
+  "item.project.startDate": "Desde:",
 
   // "item.project.fundedBy": "Funded by: ",
   "item.project.fundedBy": "Financiado por: ",

@@ -3,6 +3,7 @@ import {
   NgForOf,
   NgIf,
 } from '@angular/common';
+import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 import {
   Component,
   Input,
@@ -42,6 +43,7 @@ import { ThemedSearchFormComponent } from '../../../search-form/themed-search-fo
     NgForOf,
     ReactiveFormsModule,
     AsyncPipe,
+    NgbAccordionModule,
   ],
 })
 export class SearchSectionComponent implements OnInit {
@@ -56,6 +58,8 @@ export class SearchSectionComponent implements OnInit {
   searchForm: FormGroup;
 
   filters: Observable<string[]>;
+
+  discoveryTexts: string[];
 
   allFilter = 'all';
 
@@ -91,7 +95,47 @@ export class SearchSectionComponent implements OnInit {
     const statements = this.searchSection.initialStatements ? this.searchSection.initialStatements : 3;
     for (let i = 0; i < statements; i++) {
       this.addQueryStatement();
-    }
+    };
+    console.log(this.searchSection.discoveryConfigurationName);
+    if (this.searchSection.discoveryConfigurationName == "person") {
+      this.discoveryTexts = [
+        'Tópico de investigación: Palabras claves que representan el topico del investigador.',
+        'Instituciones: Instituciones a las que ha estado afiliada el investigador.',
+        ];
+    } else if (this.searchSection.discoveryConfigurationName == "orgunits") {
+      this.discoveryTexts = [
+        'País de la institución: Pais en donde se encuentre la sede principal de la institución.',
+        'Localidad de la institución: Región en donde se encuentra la sede principal de la institución.',
+        'Fecha de fundación: Año en que se fundo la institución.',
+        ];
+    } else if (this.searchSection.discoveryConfigurationName == "project_funding") {
+      this.discoveryTexts = [
+        'Investigador a cargo: Investigador que se adjudico el proyecto.',
+        'Institución ejecutora: Institución a la que pertenece el investigador a cargo del proyecto.',
+        'Fecha de inicio: Año en que se empezo a ejecutar el proyecto.',
+        'Fecha de termino: Año en que se termina de ejecutar el proyecto.',
+        'Institución financiadora: Institucioón que financia el proyecto.',
+        'Lineas de investigación PROCIEN: Linea de investigación PROCIEN asociada al proyecto.',
+        ];
+    } else if (this.searchSection.discoveryConfigurationName == "researchoutputs") {
+      this.discoveryTexts = [
+        'Autor: Autor de la publicación.',
+        'Institución: Institución del autor.',
+        'Tópico de investigación: Palabras claves de la articulo.',
+        'Fecha de publicación: Año en que se publico el articulo.',
+        'Lineas de investigación PROCIEN: Linea de investigación del PROCIEN asociada al articulo.',
+        'País: País del autor asociadado a la publicación.',
+        'Cuartil: Cuartil de la revista en la que se publico el articulo.',
+      ];
+    } else if (this.searchSection.discoveryConfigurationName == "thesis") {
+      this.discoveryTexts = [
+        'Objetivos de Desarrollo Sostenible: Objetivo de Desarrollo Sostenible asociado a la tesis.',
+        'Lineas de investigación PROCIEN: Linea de investigacion del PROCIEN asociada a la tesis.',
+        'Institución: Institución en la que se desarrollo la tesis.',
+      ];
+    } else {
+      this.discoveryTexts = [];
+    };
   }
 
   /**
