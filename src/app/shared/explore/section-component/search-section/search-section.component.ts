@@ -105,8 +105,7 @@ export class SearchSectionComponent implements OnInit {
     } else if (this.searchSection.discoveryConfigurationName == "orgunits") {
       this.discoveryTexts = [
         'País de la institución: Pais en donde se encuentre la sede principal de la institución.',
-        'Localidad de la institución: Región en donde se encuentra la sede principal de la institución.',
-        'Fecha de fundación: Año en que se fundo la institución.',
+        'Región de la institución: Región en donde se encuentra la sede principal de la institución.',
         ];
     } else if (this.searchSection.discoveryConfigurationName == "project_funding") {
       this.discoveryTexts = [
