@@ -6,11 +6,11 @@
       </div>
       <ng-container *ngFor="let counter of (counterData$ | async)">
         <ng-container *ngIf="counter.link; else countersSectionContent">
-          <a class="text-decoration-none" *ngIf="internalLinkService.isLinkInternal(counter.link)" [routerLink]="internalLinkService.getRelativePath(counter.link)">
-            <ng-container *ngTemplateOutlet="countersSectionContent"></ng-container>
+          <a [href]="counter.link" [target]="'_blank'">
+            <!--<ng-container *ngTemplateOutlet="countersSectionContent"></ng-container>-->
           </a>
-          <a class="text-decoration-none" *ngIf="!internalLinkService.isLinkInternal(counter.link)" [href]="counter.link" [target]="'_blank'">
-            <ng-container *ngTemplateOutlet="countersSectionContent"></ng-container>
+          <a [href]="counter.link" [target]="'_blank'">
+            <!--<ng-container *ngTemplateOutlet="countersSectionContent"></ng-container>-->
           </a>
         </ng-container>
         <ng-template #countersSectionContent>

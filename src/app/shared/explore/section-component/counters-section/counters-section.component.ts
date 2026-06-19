@@ -95,7 +95,6 @@ export class CountersSectionComponent implements OnInit {
               label: counterSettings.entityName,
               icon: counterSettings.icon,
               link: counterSettings.link,
-
             };
           }),
         )));
