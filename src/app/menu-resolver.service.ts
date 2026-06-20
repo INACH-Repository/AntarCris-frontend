@@ -147,6 +147,18 @@ export class MenuResolverService  {
             visible: true,
           };
           if (section.nestedSections && section.nestedSections.length) {
+            let auxVar: string = "";
+            if (section.id == "researchoutputs"){
+              auxVar = "researchoutputs";
+            } else if (section.id == "orgunits") {
+              auxVar = "orgunits";
+            } else if (section.id == "researcherprofiles") {
+              auxVar = "person";
+            } else if (section.id == "thesis") {
+              auxVar = "thesis";
+            } else if (section.id == "fundings_and_projects") {
+              auxVar = "project_funding";
+            }
             section.nestedSections.forEach((nested) => {
               menuList.push({
                 id: `explore_nested_${nested.id}`,
@@ -156,7 +168,12 @@ export class MenuResolverService  {
                 model: {
                   type: MenuItemType.LINK,
                   text: `menu.section.explore_${nested.id}`,
-                  link: `/explore/${nested.id}`,
+                  //link: `/search?query=`,//`/explore/${nested.id}`,
+                  link: "/search",
+                  queryParams: {
+                    configuration: auxVar,
+                  },
+                  disabled: false
                 } as LinkMenuItemModel,
               });
             });
@@ -169,12 +186,30 @@ export class MenuResolverService  {
               } as TextMenuItemModel,
             };
           } else {
+            let auxVar: string = "";
+            if (section.id == "researchoutputs"){
+              auxVar = "researchoutputs";
+            } else if (section.id == "orgunits") {
+              auxVar = "orgunits";
+            } else if (section.id == "researcherprofiles") {
+              auxVar = "person";
+            } else if (section.id == "thesis") {
+              auxVar = "thesis";
+            } else if (section.id == "fundings_and_projects") {
+              auxVar = "project_funding";
+            }
             parentMenu = {
               ...parentMenu,
               model: {
                 type: MenuItemType.LINK,
                 text: `menu.section.explore_${section.id}`,
-                link: `/explore/${section.id}`,
+                //link: auxVar,
+                link: "/search",
+                queryParams: {
+                  configuration: auxVar,
+                },
+                disabled: false
+                //link: `/explore/${section.id}`,
               } as LinkMenuItemModel,
             };
           }
