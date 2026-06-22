@@ -7394,16 +7394,16 @@
   "sorting.score.DESC": "Lo más relevante",
 
   // "sorting.dc.date.issued.ASC": "Date Issued Ascending",
-  "sorting.dc.date.issued.ASC": "Fecha de publicación Ascendente",
+  "sorting.dc.date.issued.ASC": "Fecha de publicación más reciente",
 
   // "sorting.dc.date.issued.DESC": "Date Issued Descending",
-  "sorting.dc.date.issued.DESC": "Fecha de publicación Descendente",
+  "sorting.dc.date.issued.DESC": "Fecha de publicación menos reciente",
 
   // "sorting.dc.date.accessioned.ASC": "Accessioned Date Ascending",
-  "sorting.dc.date.accessioned.ASC": "Fecha de envío Ascendente",
+  "sorting.dc.date.accessioned.ASC": "Fecha de envío más reciente",
 
   // "sorting.dc.date.accessioned.DESC": "Accessioned Date Descending",
-  "sorting.dc.date.accessioned.DESC": "Fecha de envío Descendente",
+  "sorting.dc.date.accessioned.DESC": "Fecha de envío menos reciente",
 
   // "sorting.lastModified.ASC": "Last modified Ascending",
   "sorting.lastModified.ASC": "Última modificación Ascendente",
@@ -10734,6 +10734,292 @@
 
   "statistics.categories.title": "Estadisticas del sitio",
 
+  "sorting.metric.view.ASC": "Items más visitados",
+
+  "sorting.metric.view.DESC": "Items menos visitados",
+
+  "statistics.title": "Estadisticas del sitio",
+
+  "statistics.header": "Estadisticas de {{ scope }}",
+
+  "statistics.breadcrumbs": "Estadisticas",
+
+  "statistics.page.no-data": "Datos no disponibles",
+
+  "statistics.table.no-data": "Datos no disponibles",
+
+  "statistics.table.mainReports.title.TotalVisits": "Visitas totales",
+
+  "statistics.table.mainReports.title.TopItems": "Más Vistos",
+
+  "statistics.table.mainReports.title.TotalVisitsPerMonth": "Visitas por mes",
+
+  "statistics.table.mainReports.title.TotalDownloads": "File visits",
+
+  "statistics.table.mainReports.title.TotalVisitsAndDownloads": "Items and file visits",
+
+  "statistics.table.mainReports.title.TopCountries": "Visitas por países",
+
+  "statistics.table.mainReports.title.TopContinents": "Visitas por región",
+
+  "statistics.table.mainReports.title.TopCategories": "Categorias",
+
+  "statistics.table.mainReports.title.TopCities": "Visitas por ciudad",
+
+  "form.other-information.oairecerif-author-affiliation": "Afiliación",
+
+  "statistics.login.page.max": "Maximo",
+
+  "statistics.login.page.endDate": "Fecha de termino",
+
+  "statistics.login.page.startDate": "Fecha de inicio",
+
+  "statistics.login.page.no-data-found": "Datos no disponibles",
+
+  "statistics.login.title statistics.workflow.title": "Iniciar sesion de estadisticas",
+
+  "statistics.export.csv": "Exportar CSV",
+
+  "statistics.export.excel": "Exportar Excel",
+
+  "statistics.export.jpg": "Exportar como JPEG",
+
+  "statistics.export.png": "Exportar como PNG",
+
+  "statistics.table.downloadReports.title.TotalVisits": "Más descargados",
+
+  "statistics.table.downloadReports.title.TopItems": "Más descargados",
+
+  "statistics.table.downloadReports.title.TotalVisitsPerMonth": "Descargas totales por mes",
+
+  "statistics.table.downloadReports.title.TotalDownloads": "Más descargados",
+
+  "statistics.table.downloadReports.title.TotalDownloadsPerMonth": "Descargas totales por mes",
+
+  "statistics.table.downloadReports.title.TopCountries": "Descargas por país",
+
+  "statistics.table.downloadReports.title.TopContinents": "Descargas por región",
+
+  "statistics.table.downloadReports.title.TopCategories": "Categorias",
+
+  "statistics.table.downloadReports.title.TopCities": "Descargas por ciudad",
+
+  "statistics.table.mainReports.header.views": "Visualizaciones",
+
+  "statistics.table.mainReports.header.bitstream": "Visitas por archivo",
+
+  "statistics.table.mainReports.header.continent": "Continente",
+
+  "statistics.table.mainReports.header.country": "País",
+
+  "statistics.table.mainReports.header.city": "Ciudad",
+
+  "statistics.table.mainReports.header.item": "Item",
+
+  "statistics.table.mainReports.header.community": "Comunidad",
+
+  "statistics.table.mainReports.header.collection": "Collección",
+
+  "statistics.table.downloadReports.header.views": "Descargas",
+
+  "statistics.table.downloadReports.header.continent": "Continente",
+
+  "statistics.table.downloadReports.header.country": "País",
+
+  "statistics.table.downloadReports.header.city": "Ciudad",
+
+  "statistics.table.downloadReports.header.item": "Item",
+
+  "statistics.table.publicationsReports.title.TotalVisits": "Visitas totales",
+
+  "statistics.table.publicationsReports.title.TopItems": "Más visitados",
+
+  "statistics.table.publicationsReports.title.TopCities": "Visitas por ciudades",
+//
+  "statistics.table.no-name": "(Error en la carga del objeto)",
+
+  "statistics.table.publicationsReports.title.TopCountries": "Visitas por país",
+
+  "statistics.table.publicationsReports.title.TotalVisitsPerMonth": "Visitas por mes",
+
+  "statistics.table.publicationsReports.title.TotalDownloads": "Descargas",
+
+  "statistics.table.publicationsReports.title.TotalVisitsAndDownloads": "Visitas de items y archivos",
+
+  "statistics.table.projectsReports.title.TotalVisits": "Visitas totales",
+
+  "statistics.table.projectsReports.title.TopItems": "Más visitados",
+
+  "statistics.table.projectsReports.title.TotalVisitsPerMonth": "Visitas por mes",
+
+  "statistics.table.projectsReports.title.TopCities": "Visitas por ciudades",
+
+  "statistics.table.projectsReports.title.TopCountries": "Visitas por país",
+
+  "statistics.table.projectsReports.title.TotalDownloads": "Descargas",
+
+  "statistics.table.projectsReports.title.TotalVisitsAndDownloads": "Visitas por item y archivos",
+
+  "statistics.table.rppublicationsReports.title.TotalVisits": "Visitas totales",
+
+  "statistics.table.rppublicationsReports.title.TopItems": "Más visitados",
+
+  "statistics.table.rppublicationsReports.title.TopCities": "Visitas por ciudades",
+
+  "statistics.table.rppublicationsReports.title.TopCountries": "Visitas por país",
+
+  "statistics.table.rppublicationsReports.title.TotalVisitsPerMonth": "Visitas por mes",
+
+  "statistics.table.rppublicationsReports.title.TotalDownloads": "Descargas",
+
+  "statistics.table.rppublicationsReports.title.TotalVisitsAndDownloads": "Visitas por item y archivos",
+
+  "statistics.table.rpprojectsReports.title.TotalVisits": "Visitas",
+
+  "statistics.table.rpprojectsReports.title.TopItems": "Más visitados",
+
+  "statistics.table.rpprojectsReports.title.TopCities": "Visitas por ciudad",
+
+  "statistics.table.rpprojectsReports.title.TopCountries": "Visitas por país",
+
+  "statistics.table.rpprojectsReports.title.TotalVisitsPerMonth": "Visitas por mes",
+
+  "statistics.table.rpprojectsReports.title.TotalDownloads": "Descargas",
+
+  "statistics.table.rpprojectsReports.title.TotalVisitsAndDownloads": "Visitas por item y archivos",
+
+  "statistics.categories.title": "Estadisticas por categoria",
+
+  "statistics.categories.mainReports.tab": "Reporte de visitas",
+//
+  "statistics.categories.projectsReports.tab": "Reporte de proyectos",
+
+  "statistics.categories.rpprojectsReports.tab": "Reporte de proyectos",
+
+  "statistics.categories.publicationsReports.tab": "Reporte de publicaciones",
+
+  "statistics.categories.rppublicationsReports.tab": "Reporte de publicaciones",
+
+  "statistics.categories.downloadReports.tab": "Descargar reportes",
+
+  "statistics.categories.itemReports.tab": "Reporte de visitas",
+
+  "statistics.table.itemReports.header.continent": "Continente",
+
+  "statistics.table.itemReports.header.views": "Visitas",
+
+  "statistics.table.itemReports.header.city": "Ciudad",
+
+  "statistics.table.itemReports.header.item": "Item",
+
+  "statistics.table.mainReports.header.community": "Comunidad",
+
+  "statistics.table.mainReports.header.collection": "Collección",
+
+  "statistics.table.itemReports.title.TopContinents": "Visitas por región",
+
+  "statistics.table.itemReports.title.TopCities": "Visitas por ciudad",
+
+  "statistics.table.itemReports.title.TopItems": "Más visitados",
+
+  "statistics.table.itemReports.title.TopCategories": "Categorias más visitadas",
+
+  "statistics.table.itemReports.title.TotalVisitsPerMonth": "Visitas por mes",
+
+  "statistics.table.publicationsReports.header.item": "Item",
+
+  "statistics.table.publicationsReports.header.views": "Visitas",
+
+  "statistics.table.publicationsReports.header.city": "Ciudad",
+
+  "statistics.table.projectsReports.header.item": "Item",
+
+  "statistics.table.projectsReports.header.views": "Visitas",
+
+  "statistics.table.projectsReports.header.city": "Ciudad",
+
+  "statistics.reports.title": "Reportes",
+
+  "statistics-page.export-map-as-image": "Exportar mapa",
+
+  "admin.reports.commons.export": "Exportar actualización de metadatos",
+
+  "collection-export.success": "La exportación de items de la colección se realizo exitosamente",
+
+  "collection-export.error": "Un error ocurrio al exportar los items de la colección",
+
+  "collection.page.export": "Exportar items de esta colección",
+
+  "context-menu.actions.export-item.btn": "Exportar",
+
+  "dso-selector.export-metadata-csv.dspaceobject.head": "Exportar metadatos desde",
+
+  "dso-selector.export-metadata-xls.dspaceobject.head": "Exportar metadatos desde",
+
+  "dso-selector.export-batch.dspaceobject.head": "Exportar Batch (ZIP) desde",
+
+  "dso-selector.export-item.item.head": "Exportar",
+
+  "dso-selector.export-item.sub-level": "Exportar items como excel",
+
+  "confirmation-modal.export-metadata.header": "Exportar metadatos para {{ dsoName }}",
+
+  "confirmation-modal.export-metadata-csv.header": "Exportar metadatos para {{ dsoName }}",
+
+  "confirmation-modal.export-metadata-csv.info": "Esta seguro de exportar metadatos para {{ dsoName }}",
+
+  "confirmation-modal.export-metadata-csv.cancel": "Cancelar",
+
+  "confirmation-modal.export-metadata-csv.confirm": "Exportar",
+
+  "confirmation-modal.export-metadata-xls.header": "Exportar metadatos para {{ dsoName }}",
+
+  "confirmation-modal.export-metadata-xls.info": "Esta seguro de exportar metadatos para {{ dsoName }}",
+
+  "confirmation-modal.export-metadata-xls.cancel": "Cancelar",
+
+  "confirmation-modal.export-metadata-xls.confirm": "Exportar",
+
+  "confirmation-modal.export-batch.header": "Exportar batch (ZIP) para {{ dsoName }}",
+
+  "confirmation-modal.export-batch.info": "Esta seguro de exportar un batch (ZIP) para {{ dsoName }}",
+
+  "confirmation-modal.export-batch.cancel": "Cancelar",
+
+  "confirmation-modal.export-batch.confirm": "Exportar",
+
+  "confirmation-modal.delete-eperson.header": "Eliminar EPerson \"{{ dsoName }}\"",
+
+  "menu.section.statistics": "Estadisticas",
+
+  "menu.section.statistics.workflow": "Flujo de trabajo",
+
+  "menu.section.statistics.login": "Iniciar sesión",
+
+  "menu.section.statistics.site": "Sitio",
+
+  "menu.section.statistics_task": "Tarea de estadisticas",
+
+  "context-menu.actions.statistics.btn": "Estadisticas",
+
+  "context-menu.actions.subscription.statistics": "Estadisticas",
+
+  "context-menu.actions.subscription.content+statistics": "Contenido y estadisticas",
+
+  "context-menu.actions.label": "Opciones",
+
+  "context-menu.actions.show-all-metadata": "Mostrar todos los metadatos",
+
+  "context-menu.actions.edit-item.btn.FULL": "Editar detalles",
+
+  "context-menu.actions.edit-item.btn.OWNER": "Editar",
+
+  "nav.statistics.header": "Estadisticas",
+
+  "form.other-information.miur.journal.startdate": "Start Date",
+
+  "form.other-information.miur.journal.enddate": "End Date",
+
   // Layout - Autogenerated i18n keys: Tab headers
   "layout.tab.header.Person.details": "Perfil",
   "layout.tab.header.Person.publications": "Publicaciones",
@@ -10741,7 +11027,7 @@
   "layout.tab.header.Person.projects": "Proyectos",
   "layout.tab.header.Person.otherinfo": "Resumen profesional",
   "layout.tab.header.Person.indicators": "Metricas",
-  "layout.tab.header.Person.secure": "Secured Tab",
+  "layout.tab.header.Person.secure": "Pestaña de seguridad",
   "layout.tab.header.OrgUnit.maininformation": "Informacion",
   "layout.tab.header.OrgUnit.organizations": "Instituciones",
   //"layout.tab.header.OrgUnit.publications": "Publicaciones",

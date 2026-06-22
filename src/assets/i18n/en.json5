@@ -6435,7 +6435,7 @@
   "statistics.table.publicationsReports.title.TopItems": "Most viewed",
 
   "statistics.table.publicationsReports.title.TopCities": "Top cities",
-
+//
   "statistics.table.no-name": "(object name could not be loaded)",
 
   "statistics.table.publicationsReports.title.TopCountries": "Top countries",
@@ -6491,7 +6491,7 @@
   "statistics.categories.title": "Statistics by category",
 
   "statistics.categories.mainReports.tab": "Views reports",
-
+//
   "statistics.categories.projectsReports.tab": "Project reports",
 
   "statistics.categories.rpprojectsReports.tab": "Researchers projects reports",
